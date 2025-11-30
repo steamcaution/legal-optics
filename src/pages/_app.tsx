@@ -36,6 +36,13 @@ export default function MyApp({
   return (
     <CacheProvider value={emotionCache}>
       <Head>
+        <link
+          rel="preload"
+          href="/legal-optics/fonts/BookkMyungjo_Light.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         <title>Legal Optics</title>
