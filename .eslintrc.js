@@ -1,0 +1,36 @@
+module.exports = {
+  parser: '@typescript-eslint/parser',
+  env: {
+    browser: true,
+    es6: true,
+    node: true,
+    jest: true,
+  },
+  root: true,
+  extends: [
+    'eslint:recommended',
+    'plugin:react/recommended',
+    'plugin:@typescript-eslint/recommended',
+    'plugin:@typescript-eslint/eslint-recommended',
+    'plugin:prettier/recommended',
+  ],
+  parserOptions: {
+    ecmaVersion: 'latest',
+    ecmaFeatures: { jsx: true },
+    sourceType: 'module',
+    tsconfigRootDir: __dirname,
+  },
+  plugins: ['react', '@typescript-eslint'],
+  rules: {
+    'prettier/prettier': ['error', { endOfLine: 'auto' }],
+    '@typescript-eslint/explicit-module-boundary-types': 'off',
+    'react/react-in-jsx-scope': 'off',
+    'no-unused-vars': 'off',
+    '@typescript-eslint/no-unused-vars': ['warn'],
+    '@typescript-eslint/interface-name-prefix': 'off',
+    '@typescript-eslint/explicit-function-return-type': 'off',
+    '@typescript-eslint/no-explicit-any': 'off',
+    '@typescript-eslint/no-var-requires': 0,
+    '@typescript-eslint/no-empty-function': 'off',
+  },
+}
