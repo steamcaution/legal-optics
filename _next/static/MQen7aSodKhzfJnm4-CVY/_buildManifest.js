@@ -1,21 +1,16 @@
 self.__BUILD_MANIFEST = {
   "/": [
-    "static/chunks/65cae52fba73b96e.js"
+    "static/chunks/b594ab5f0fad8ec3.js"
   ],
   "/_error": [
-    "static/chunks/671309073475267e.js"
+    "static/chunks/af74a81753161ee9.js"
   ],
   "/about": [
-    "static/chunks/cf2db8d73096c056.js"
+    "static/chunks/f25407e7dae92f95.js"
   ],
   "__rewrites": {
     "afterFiles": [],
-    "beforeFiles": [
-      {
-        "source": "/legal-optics//_next/:path+",
-        "destination": "/legal-optics/_next/:path+"
-      }
-    ],
+    "beforeFiles": [],
     "fallback": []
   },
   "sortedPages": [
