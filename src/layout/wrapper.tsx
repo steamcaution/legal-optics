@@ -1,11 +1,11 @@
-import React, { ReactElement } from 'react'
-import Header from './Header'
-import Footer from './Footer'
-import { TPageWrapper } from './wrapper.types'
-import { Container, ContainerInner } from '../styles/common.styles'
+import React, { ReactElement } from 'react';
+import Header from './Header';
+import Footer from './Footer';
+import { TPageWrapper } from './wrapper.types';
+import { Container, ContainerInner } from '../styles/common.styles';
 
 interface WrapperProps extends TPageWrapper {
-  children: ReactElement
+  children: ReactElement;
 }
 
 const Wrapper = ({ children, isMainSection = false }: WrapperProps) => {
@@ -21,7 +21,7 @@ const Wrapper = ({ children, isMainSection = false }: WrapperProps) => {
       </Container>
       <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Wrapper
+export default Wrapper;

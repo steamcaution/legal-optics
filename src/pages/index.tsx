@@ -1,8 +1,8 @@
-import React, { ReactElement } from 'react'
-import { NextPageWithLayout } from './_app'
-import { AppPageLayoutProps } from '../layout/wrapper.types'
-import Wrapper from '../layout/wrapper'
-import { AboutButton, MainTitle } from '../styles/main.styles'
+import React, { ReactElement } from 'react';
+import { NextPageWithLayout } from './_app';
+import { AppPageLayoutProps } from '../layout/wrapper.types';
+import Wrapper from '../layout/wrapper';
+import { AboutButton, MainTitle } from '../styles/main.styles';
 
 const Main: NextPageWithLayout = () => {
   return (
@@ -14,14 +14,11 @@ const Main: NextPageWithLayout = () => {
       </MainTitle>
       <AboutButton href="/about">Go to LegalOptics &gt;</AboutButton>
     </>
-  )
-}
+  );
+};
 
-export default Main
+export default Main;
 
-Main.getLayout = function getLayout(
-  page: ReactElement,
-  props: AppPageLayoutProps
-) {
-  return <Wrapper {...{ props, isMainSection: true }}>{page}</Wrapper>
-}
+Main.getLayout = function getLayout(page: ReactElement, props: AppPageLayoutProps) {
+  return <Wrapper {...{ props, isMainSection: true }}>{page}</Wrapper>;
+};

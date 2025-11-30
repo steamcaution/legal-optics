@@ -1,10 +1,10 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 // Problem Section
 export const ProblemSection = styled.section`
   padding: 100px 0;
   background: #0b161e;
-`
+`;
 
 export const SectionTitle = styled.h2`
   font-size: 36px;
@@ -21,7 +21,7 @@ export const SectionTitle = styled.h2`
   @media (max-width: 480px) {
     font-size: 24px;
   }
-`
+`;
 
 export const SectionLead = styled.p`
   font-size: 18px;
@@ -39,7 +39,7 @@ export const SectionLead = styled.p`
     font-size: 14px;
     margin: 0 0 30px 0;
   }
-`
+`;
 
 export const ProblemGrid = styled.div`
   display: grid;
@@ -54,7 +54,7 @@ export const ProblemGrid = styled.div`
   @media (max-width: 520px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const ProblemCard = styled.div`
   background: #162c3f;
@@ -72,12 +72,12 @@ export const ProblemCard = styled.div`
   @media (max-width: 768px) {
     padding: 30px 20px;
   }
-`
+`;
 
 export const ProblemIcon = styled.div`
   font-size: 56px;
   margin-bottom: 20px;
-`
+`;
 
 export const ProblemCardTitle = styled.h3`
   font-size: 18px;
@@ -88,7 +88,7 @@ export const ProblemCardTitle = styled.h3`
   @media (max-width: 768px) {
     font-size: 16px;
   }
-`
+`;
 
 export const ProblemList = styled.ul`
   list-style: none;
@@ -111,13 +111,13 @@ export const ProblemList = styled.ul`
       font-weight: bold;
     }
   }
-`
+`;
 
 // Solutions Section
 export const SolutionsSection = styled.section`
   padding: 100px 0;
   background: #0b161e;
-`
+`;
 
 export const SolutionsGrid = styled.div`
   display: grid;
@@ -132,7 +132,7 @@ export const SolutionsGrid = styled.div`
   @media (max-width: 520px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const SolutionCard = styled.div`
   background: #162c3f;
@@ -168,7 +168,7 @@ export const SolutionCard = styled.div`
   @media (max-width: 768px) {
     padding: 30px 20px;
   }
-`
+`;
 
 export const SolutionBadge = styled.div`
   display: inline-block;
@@ -179,7 +179,7 @@ export const SolutionBadge = styled.div`
   font-size: 12px;
   font-weight: bold;
   margin-bottom: 16px;
-`
+`;
 
 export const FeatureList = styled.ul`
   list-style: none;
@@ -202,7 +202,7 @@ export const FeatureList = styled.ul`
       font-weight: bold;
     }
   }
-`
+`;
 
 export const SolutionLink = styled.a`
   display: inline-block;
@@ -217,13 +217,13 @@ export const SolutionLink = styled.a`
     color: #4dd9e8;
     transform: translateX(5px);
   }
-`
+`;
 
 // Process Section
 export const ProcessSection = styled.section`
   padding: 100px 0;
   background: #0b161e;
-`
+`;
 
 export const SimpleProcessFlow = styled.div`
   display: grid;
@@ -239,7 +239,7 @@ export const SimpleProcessFlow = styled.div`
     grid-template-columns: 1fr;
     gap: 12px;
   }
-`
+`;
 
 export const SimpleProcessStep = styled.div`
   text-align: center;
@@ -277,7 +277,7 @@ export const SimpleProcessStep = styled.div`
   @media (max-width: 900px) {
     padding: 30px 20px;
   }
-`
+`;
 
 export const SimpleStepNumber = styled.div`
   position: absolute;
@@ -295,12 +295,12 @@ export const SimpleStepNumber = styled.div`
   font-weight: bold;
   font-size: 18px;
   box-shadow: 0 0 0 3px rgba(50, 184, 198, 0.4);
-`
+`;
 
 export const SimpleStepIcon = styled.div`
   font-size: 56px;
   margin: 20px 0;
-`
+`;
 
 export const SimpleProcessArrow = styled.div`
   font-size: 36px;
@@ -312,17 +312,17 @@ export const SimpleProcessArrow = styled.div`
     transform: rotate(90deg);
     margin: 10px 0;
   }
-`
+`;
 
 // Technology Section
 export const TechnologySection = styled.section`
   padding: 100px 0;
   background: #0b161e;
-`
+`;
 
 export const TechContent = styled.div`
   margin-top: 60px;
-`
+`;
 
 export const TechProblemSolution = styled.div`
   display: grid;
@@ -333,7 +333,7 @@ export const TechProblemSolution = styled.div`
   @media (max-width: 768px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const TechBox = styled.div`
   padding: 40px 32px;
@@ -373,17 +373,17 @@ export const TechBox = styled.div`
   @media (max-width: 768px) {
     padding: 30px 20px;
   }
-`
+`;
 
 export const ProblemBox = styled(TechBox)`
   background: rgba(192, 21, 47, 0.08);
   border-left: 4px solid #c0152f;
-`
+`;
 
 export const SolutionBox = styled(TechBox)`
   background: rgba(50, 184, 198, 0.08);
   border-left: 4px solid #32b8c6;
-`
+`;
 
 export const CompetitiveGrid = styled.div`
   display: grid;
@@ -401,7 +401,7 @@ export const CompetitiveGrid = styled.div`
   @media (max-width: 520px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const CompetitiveCard = styled.div`
   background: #162c3f;
@@ -434,18 +434,18 @@ export const CompetitiveCard = styled.div`
   @media (max-width: 768px) {
     padding: 24px 16px;
   }
-`
+`;
 
 export const CompIcon = styled.div`
   font-size: 40px;
   margin-bottom: 12px;
-`
+`;
 
 // Stats Section
 export const StatsSection = styled.section`
   padding: 100px 0;
   background: rgba(94, 82, 64, 0.12);
-`
+`;
 
 export const StatsGrid = styled.div`
   display: grid;
@@ -460,7 +460,7 @@ export const StatsGrid = styled.div`
   @media (max-width: 520px) {
     grid-template-columns: 1fr;
   }
-`
+`;
 
 export const StatCard = styled.div`
   background: #162c3f;
@@ -480,7 +480,7 @@ export const StatCard = styled.div`
   @media (max-width: 768px) {
     padding: 30px 20px;
   }
-`
+`;
 
 export const StatNumber = styled.div`
   font-size: 52px;
@@ -492,7 +492,7 @@ export const StatNumber = styled.div`
   @media (max-width: 768px) {
     font-size: 40px;
   }
-`
+`;
 
 export const StatLabel = styled.div`
   font-size: 18px;
@@ -503,19 +503,19 @@ export const StatLabel = styled.div`
   @media (max-width: 768px) {
     font-size: 16px;
   }
-`
+`;
 
 export const StatDesc = styled.p`
   font-size: 14px;
   color: #a8c5cc;
   margin: 0;
-`
+`;
 
 // CTA Section
 export const CTASection = styled.section`
   padding: 100px 0;
   background: linear-gradient(135deg, #0b161e 0%, #162c3f 100%);
-`
+`;
 
 export const CTAWrap = styled.div`
   padding-bottom: 50px;
@@ -554,7 +554,7 @@ export const CTAWrap = styled.div`
       margin: 0 0 20px 0;
     }
   }
-`
+`;
 
 export const CTAButtons = styled.div`
   display: flex;
@@ -566,7 +566,7 @@ export const CTAButtons = styled.div`
   @media (max-width: 768px) {
     flex-direction: column;
   }
-`
+`;
 
 export const BtnLarge = styled.a`
   padding: 20px 45px;
@@ -586,7 +586,7 @@ export const BtnLarge = styled.a`
     font-size: 14px;
     padding: 12px 24px;
   }
-`
+`;
 
 export const BtnPhone = styled(BtnLarge)`
   background: #ffffff;
@@ -598,7 +598,7 @@ export const BtnPhone = styled(BtnLarge)`
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
-`
+`;
 
 export const BtnKakao = styled(BtnLarge)`
   background: #fee500;
@@ -610,7 +610,7 @@ export const BtnKakao = styled(BtnLarge)`
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
   }
-`
+`;
 
 export const CTAEmail = styled.div`
   margin-top: 32px;
@@ -628,13 +628,13 @@ export const CTAEmail = styled.div`
       border-bottom-color: #ffffff;
     }
   }
-`
+`;
 
 // Final Message Section
 export const FinalMessageSection = styled.section`
   padding: 80px 0;
   background: #0b161e;
-`
+`;
 
 export const FinalMessage = styled.div`
   text-align: center;
@@ -670,4 +670,4 @@ export const FinalMessage = styled.div`
       font-size: 16px;
     }
   }
-`
+`;

@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
   FooterWrap,
   FooterTop,
@@ -14,9 +14,9 @@ import {
   CopyrightText,
   LegalLinks,
   InfoWrap,
-  InfoTop,
-} from '../styles/footer.styles'
-import Link from 'next/link'
+  InfoTop
+} from '../styles/footer.styles';
+import Link from 'next/link';
 
 export default function Footer() {
   return (
@@ -36,36 +36,14 @@ export default function Footer() {
       <FooterBottom>
         <InfoWrap>
           <InfoTop>
-            <img
-              className="footerLogo"
-              src="/legal-optics/img/title_logo.png"
-              alt="Legal Optics"
-            />
+            <img className="footerLogo" src="/legal-optics/img/title_logo.png" alt="Legal Optics" />
 
             <SocialLinks>
-              <a
-                href="http://pf.kakao.com/_DJxgkn"
-                title="KakaoTalk"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/legal-optics/img/kakao.png"
-                  alt="KakaoTalk"
-                  width={24}
-                />
+              <a href="http://pf.kakao.com/_DJxgkn" title="KakaoTalk" target="_blank" rel="noopener noreferrer">
+                <img src="/legal-optics/img/kakao.png" alt="KakaoTalk" width={24} />
               </a>
-              <a
-                href="https://blog.naver.com/legalpapers"
-                title="Blog"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                <img
-                  src="/legal-optics/img/naver_blog.png"
-                  alt="NaverBlog"
-                  width={34}
-                />
+              <a href="https://blog.naver.com/legalpapers" title="Blog" target="_blank" rel="noopener noreferrer">
+                <img src="/legal-optics/img/naver_blog.png" alt="NaverBlog" width={34} />
               </a>
             </SocialLinks>
           </InfoTop>
@@ -77,10 +55,7 @@ export default function Footer() {
                 <p>대표자 : 최정인</p>
                 <p>사업자등록번호 : 501-12-33730</p>
                 <p>통신판매업 신고번호 : 2025-0000-00000</p>
-                <p>
-                  (47247) 부산광역시 부산진구 동천로 116, 3층 오픈오피스 B25, 26
-                  (전포동, 한신밴)
-                </p>
+                <p>(47247) 부산광역시 부산진구 동천로 116, 3층 오픈오피스 B25, 26 (전포동, 한신밴)</p>
               </CompanyInfo>
             </LeftSection>
 
@@ -100,9 +75,7 @@ export default function Footer() {
 
         {/* 하단 바: 저작권, 법률링크 */}
         <FooterBottomBar>
-          <CopyrightText>
-            © 2025 Legal Optics • All Rights Reserved
-          </CopyrightText>
+          <CopyrightText>© 2025 Legal Optics • All Rights Reserved</CopyrightText>
 
           <LegalLinks>
             <Link href="/">개인정보처리방침</Link>
@@ -114,5 +87,5 @@ export default function Footer() {
         </FooterBottomBar>
       </FooterBottom>
     </FooterWrap>
-  )
+  );
 }

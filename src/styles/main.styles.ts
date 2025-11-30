@@ -1,4 +1,4 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const MainTitle = styled.h1`
   font-size: 52px;
@@ -8,7 +8,7 @@ export const MainTitle = styled.h1`
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
   margin-top: -60vh;
   margin-bottom: 24px;
-`
+`;
 
 export const AboutButton = styled.a`
   display: inline-block;
@@ -26,4 +26,4 @@ export const AboutButton = styled.a`
     opacity: 0.8;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   }
-`
+`;

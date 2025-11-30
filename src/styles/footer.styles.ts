@@ -1,8 +1,8 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
 export const FooterWrap = styled.footer`
   margin-top: 0;
-`
+`;
 
 export const FooterTop = styled.div`
   background: #142530;
@@ -20,7 +20,7 @@ export const FooterTop = styled.div`
     background-size: 20%;
     pointer-events: none;
   }
-`
+`;
 
 export const FooterTopInner = styled.div`
   position: relative;
@@ -74,15 +74,15 @@ export const FooterTopInner = styled.div`
   @media (max-width: 480px) {
     padding: 50px 16px 40px;
   }
-`
+`;
 
 export const FooterBottom = styled.div`
   background: #0e293c;
   color: #cfe6ea;
   padding: 32px 0;
-`
+`;
 
-export const InfoWrap = styled.div``
+export const InfoWrap = styled.div``;
 export const InfoTop = styled.div`
   display: flex;
   justify-content: space-between;
@@ -93,7 +93,7 @@ export const InfoTop = styled.div`
   .footerLogo {
     width: 150px;
   }
-`
+`;
 export const InfoInner = styled.div`
   margin: 0 auto;
   max-width: 1200px;
@@ -112,13 +112,13 @@ export const InfoInner = styled.div`
     gap: 24px;
     padding: 0 16px;
   }
-`
+`;
 
 export const LeftSection = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
-`
+`;
 
 export const CompanyInfo = styled.div`
   display: flex;
@@ -142,7 +142,7 @@ export const CompanyInfo = styled.div`
     color: #ffffff;
     margin-bottom: 4px;
   }
-`
+`;
 
 export const RightSection = styled.div`
   display: flex;
@@ -153,7 +153,7 @@ export const RightSection = styled.div`
   @media (max-width: 768px) {
     align-items: flex-start;
   }
-`
+`;
 
 export const ContactGroup = styled.div`
   display: flex;
@@ -180,7 +180,7 @@ export const ContactGroup = styled.div`
       font-weight: 600;
     }
   }
-`
+`;
 
 export const SocialLinks = styled.div`
   display: flex;
@@ -193,7 +193,7 @@ export const SocialLinks = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-start;
   }
-`
+`;
 
 export const FooterBottomBar = styled.div`
   max-width: 1200px;
@@ -208,7 +208,7 @@ export const FooterBottomBar = styled.div`
     gap: 12px;
     text-align: center;
   }
-`
+`;
 
 export const CopyrightText = styled.p`
   font-size: 12px;
@@ -219,7 +219,7 @@ export const CopyrightText = styled.p`
   @media (max-width: 768px) {
     font-size: 11px;
   }
-`
+`;
 
 export const LegalLinks = styled.div`
   display: flex;
@@ -255,37 +255,37 @@ export const LegalLinks = styled.div`
       display: none;
     }
   }
-`
+`;
 
 /* Legacy exports for compatibility */
 export const InfoCol = styled.div`
   display: none;
-`
+`;
 
 export const InfoColManager = styled.div`
   display: none;
-`
+`;
 
 export const LogoCol = styled.div`
   display: none;
-`
+`;
 
 export const ManagerPhone = styled.p`
   display: none;
-`
+`;
 
 export const CTAWrap = styled.div`
   display: none;
-`
+`;
 
 export const CTAButtons = styled.div`
   display: none;
-`
+`;
 
 export const CTAButtonIcon = styled.a`
   display: none;
-`
+`;
 
 export const FooterBottomSection = styled.div`
   display: none;
-`
+`;

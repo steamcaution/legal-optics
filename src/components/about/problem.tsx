@@ -1,14 +1,14 @@
-import React from 'react'
+import React from 'react';
 import {
-  ProblemSection,
-  SectionTitle,
-  SectionLead,
-  ProblemGrid,
   ProblemCard,
-  ProblemIcon,
   ProblemCardTitle,
+  ProblemGrid,
+  ProblemIcon,
   ProblemList,
-} from '../styles/about.styles'
+  ProblemSection,
+  SectionLead,
+  SectionTitle
+} from '../../styles/about.styles';
 
 export const Problem = () => {
   return (
@@ -48,5 +48,5 @@ export const Problem = () => {
         </ProblemCard>
       </ProblemGrid>
     </ProblemSection>
-  )
-}
+  );
+};

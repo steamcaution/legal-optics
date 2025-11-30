@@ -1,6 +1,6 @@
-import styled from '@emotion/styled'
+import styled from '@emotion/styled';
 
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/legal-optics'
+const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/legal-optics';
 
 export const GlobalFontStyles = `
   @font-face {
@@ -9,7 +9,7 @@ export const GlobalFontStyles = `
     font-style: normal;
     font-display: fallback;
   }
-`
+`;
 
 export const HeaderWrap = styled.header`
   background: #0b161e;
@@ -21,7 +21,7 @@ export const HeaderWrap = styled.header`
   right: 0;
   height: 110px;
   z-index: 1000;
-`
+`;
 
 export const HeaderInner = styled.div`
   background: #162c3f;
@@ -33,7 +33,7 @@ export const HeaderInner = styled.div`
   padding: 0 80px;
   height: 90px;
   z-index: 1001;
-`
+`;
 
 export const TitleLogo = styled.a`
   display: flex;
@@ -43,7 +43,7 @@ export const TitleLogo = styled.a`
   img {
     display: block;
   }
-`
+`;
 
 export const Nav = styled.nav`
   display: flex;
@@ -79,7 +79,7 @@ export const Nav = styled.nav`
         inset 0 -1px 0 rgba(0, 0, 0, 0.03);
     }
   }
-`
+`;
 
 export const Container = styled.div`
   padding-top: 110px;
@@ -87,14 +87,14 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   background: #0b161e;
-`
+`;
 
 export const ContainerInner = styled.div<{ isMainSection?: boolean }>`
-  width: ${(props) => (props.isMainSection ? 'calc(100%-60px)' : '1200px')};
+  width: ${props => (props.isMainSection ? 'calc(100%-60px)' : '1200px')};
   margin: 0 auto;
   padding: 0 30px;
 
-  ${(props) =>
+  ${props =>
     props.isMainSection &&
     `
       height: 100vh;
@@ -108,4 +108,4 @@ export const ContainerInner = styled.div<{ isMainSection?: boolean }>`
       background-repeat: no-repeat;
       padding: 0 100px;
   `}
-`
+`;
