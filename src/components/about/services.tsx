@@ -1,6 +1,6 @@
 'use client';
 
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import {
   ServiceSection,
   ServiceNav,
@@ -29,11 +29,9 @@ import {
   PricingGrid,
   PricingCard,
   PricingCardTitle,
-  PricingPeriod,
-  PricingOld,
-  PricingSale,
   PricingPrice,
   PricingVat,
+  PricingSale,
   PricingBtn,
   DetailBox,
   DetailImage,
@@ -51,14 +49,70 @@ interface PersonDetail {
   };
 }
 
+declare global {
+  interface Window {
+    Naver?: any;
+  }
+}
+
 export const Services = () => {
   const [activeTab, setActiveTab] = useState('org');
   const [openPerson, setOpenPerson] = useState<string | null>(null);
 
+  const [naverPay, setNaverPay] = useState<any>(null);
+
+  /* ---------------------------------------------------
+     [1] 네이버페이 SDK 로드
+  --------------------------------------------------- */
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = 'https://nsp.pay.naver.com/sdk/js/naverpay.min.js';
+    script.async = true;
+
+    script.onload = () => {
+      if (window.Naver?.Pay) {
+        const pay = window.Naver.Pay.create({
+          mode: 'development', // production 변경 가능
+          clientId: 'HN3GGCMDdTgGUfl0kFCo',
+          chainId: 'TXgyVHBNdWVwdTR'
+        });
+        setNaverPay(pay);
+      }
+    };
+
+    document.body.appendChild(script);
+  }, []);
+
+  /* ---------------------------------------------------
+     [2] 결제 호출 함수
+  --------------------------------------------------- */
+  const handlePay = (planName: string, amount: number | null) => {
+    if (!naverPay) {
+      alert('네이버페이를 초기화 중입니다. 잠시 후 다시 시도해 주세요.');
+      return;
+    }
+
+    const merchantPayKey = `PAY_${Date.now()}`;
+
+    naverPay.open({
+      merchantPayKey,
+      productName: planName,
+      productCount: '1',
+      totalPayAmount: amount ? String(amount) : '0',
+      taxScopeAmount: amount ? String(amount) : '0',
+      taxExScopeAmount: '0',
+      returnUrl: 'https://developers.pay.naver.com/user/sand-box/payment'
+    });
+  };
+
+  /* ---------------------------------------------------
+     데이터 원본 (그대로 유지)
+  --------------------------------------------------- */
+
   const personDetail: PersonDetail = {
     lawyer: {
-      name: '강민재 대표이사',
-      role: '강민재 대표이사',
+      name: '강민재',
+      role: 'CSO',
       description:
         "리걸옵틱스의 브랜딩 전략 총괄로, 변호사 콘텐츠 운영 구조 설계와\n분석 기반의 시각 커뮤니케이션 전략을 담당합니다.\n'법률 브랜드 확장'에 특화된 디렉션을 제공합니다.",
       expertise: '법률 브랜딩 / 콘텐츠 전략 / 시각 기획 / 변호사 포지셔닝',
@@ -70,8 +124,8 @@ export const Services = () => {
       image: '/legal-optics/img/full_lawyer.png'
     },
     director: {
-      name: '대표 최정인',
-      role: 'AI 자동화 개발자',
+      name: '최정인',
+      role: 'CEO',
       description:
         "AI 기반 OCR·문서 구조 분석·자동화 처리 시스템을 개발하며,\n법률 문서 흐름을 디지털 중심으로 재구성하는 역할을 담당합니다.\n'문서 자동화·지능형 분석'에 특화된 솔루션을 제공합니다.",
       expertise: 'OCR 엔진 최적화 / NLP 기반 문장 분류 / PDF 파싱 / 문서 자동화 파이프라인 구축',
@@ -86,8 +140,8 @@ export const Services = () => {
   };
 
   const orgMembers = [
-    { id: 'lawyer', role: '대표이사', name: '대표이사 강민재', image: 'img/profile_lawyer.png' },
-    { id: 'director', role: 'AI 자동화 개발자', name: '대표 최정인', image: 'img/profile_director.png' }
+    { id: 'lawyer', role: 'CSO', name: '강민재', image: 'img/profile_lawyer.png' },
+    { id: 'director', role: 'CEO', name: '최정인', image: 'img/profile_director.png' }
   ];
 
   const snsChannels = [
@@ -112,12 +166,14 @@ export const Services = () => {
   ];
 
   const pricingPlans = [
-    { period: '1개월', price: 59000, old: null, discount: null },
-    { period: '3개월', price: 168150, old: 177000, discount: '5% 할인' },
-    { period: '6개월', price: 318600, old: 354000, discount: '10% 할인' },
-    { period: '12개월', price: 601800, old: 708000, discount: '15% 할인' }
+    { title: 'BASIC 요금제', price: '99,000원', vat: 'VAT 포함', note: null },
+    { title: 'PREMIUM 요금제', price: '990,000원', vat: 'VAT 포함', note: null },
+    { title: '무제한 요금제', price: null, vat: null, note: '문의' }
   ];
 
+  /* ---------------------------------------------------
+     렌더링 컨텐츠
+  --------------------------------------------------- */
   const renderContent = () => {
     switch (activeTab) {
       case 'org':
@@ -148,11 +204,13 @@ export const Services = () => {
                   <DetailText>
                     <h3>{personDetail[openPerson].name}</h3>
                     <p>{personDetail[openPerson].description}</p>
+
                     <div>
                       <strong>전문 분야</strong>
                       <br />
                       <span>{personDetail[openPerson].expertise}</span>
                     </div>
+
                     <div style={{ marginTop: '16px' }}>
                       <strong>주요 경력</strong>
                       <br />
@@ -206,19 +264,34 @@ export const Services = () => {
       case 'price':
         return (
           <PricingWrapper>
-            <PricingTitle>어드밴스 요금제 결제</PricingTitle>
+            <PricingTitle>요금제 안내</PricingTitle>
             <PricingSubtitle>안전한 네이버페이 결제로 간단하게 구독을 시작해보세요.</PricingSubtitle>
 
             <PricingGrid>
               {pricingPlans.map((plan, idx) => (
                 <PricingCard key={idx}>
-                  <PricingCardTitle>Advanced 어드밴스</PricingCardTitle>
-                  <PricingPeriod>{plan.period}</PricingPeriod>
-                  {plan.old && <PricingOld>{plan.old.toLocaleString()}원</PricingOld>}
-                  {plan.discount && <PricingSale>{plan.discount}</PricingSale>}
-                  <PricingPrice>{plan.price.toLocaleString()}원</PricingPrice>
-                  <PricingVat>(VAT 포함)</PricingVat>
-                  <PricingBtn>시작하기</PricingBtn>
+                  <PricingCardTitle>{plan.title}</PricingCardTitle>
+
+                  {plan.price && <PricingPrice>{plan.price}</PricingPrice>}
+                  {plan.vat && <PricingVat>{plan.vat}</PricingVat>}
+                  {plan.note && <PricingSale>{plan.note}</PricingSale>}
+
+                  <PricingBtn
+                    onClick={() => {
+                      if (plan.note === '문의') {
+                        alert('무제한 요금제는 별도 문의가 필요합니다.');
+                        return;
+                      }
+
+                      const priceValue = plan.price
+                        ? Number(plan.price.replace(/[^0-9]/g, ''))
+                        : null;
+
+                      handlePay(plan.title, priceValue);
+                    }}
+                  >
+                    시작하기
+                  </PricingBtn>
                 </PricingCard>
               ))}
             </PricingGrid>
@@ -230,15 +303,20 @@ export const Services = () => {
     }
   };
 
+  /* ---------------------------------------------------
+     최종 렌더
+  --------------------------------------------------- */
   return (
     <ServiceSection>
       <ServiceNav>
         <ServiceNavButton className={activeTab === 'org' ? 'active' : ''} onClick={() => setActiveTab('org')}>
           조직도
         </ServiceNavButton>
+
         <ServiceNavButton className={activeTab === 'sns' ? 'active' : ''} onClick={() => setActiveTab('sns')}>
           SNS 채널
         </ServiceNavButton>
+
         <ServiceNavButton className={activeTab === 'price' ? 'active' : ''} onClick={() => setActiveTab('price')}>
           요금제
         </ServiceNavButton>
