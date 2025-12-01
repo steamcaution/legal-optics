@@ -8,13 +8,13 @@ interface WrapperProps extends TPageWrapper {
   children: ReactElement;
 }
 
-const Wrapper = ({ children, isMainSection = false }: WrapperProps) => {
+const Wrapper = ({ children }: WrapperProps) => {
   return (
     <>
       <Header />
       <Container>
         <div className="content">
-          <ContainerInner isMainSection={isMainSection}>
+          <ContainerInner>
             <div>{children}</div>
           </ContainerInner>
         </div>
