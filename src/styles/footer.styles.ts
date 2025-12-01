@@ -17,7 +17,7 @@ export const FooterTop = styled.div`
     background-image: url('/legal-optics/img/background_logo.png');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 20%;
+    background-size: 18%;
     pointer-events: none;
   }
 `;
@@ -90,6 +90,7 @@ export const InfoTop = styled.div`
   margin: 0 auto;
   padding-bottom: 24px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.09);
+
   .footerLogo {
     width: 150px;
   }
