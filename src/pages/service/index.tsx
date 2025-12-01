@@ -7,7 +7,7 @@ import { Solutions } from '../../components/main/solutions';
 import { Process } from '../../components/about/process';
 import { Technology } from '../../components/about/tech';
 
-const AboutUs: NextPageWithLayout = () => {
+const Services: NextPageWithLayout = () => {
   return (
     <>
       <Problem />
@@ -18,8 +18,8 @@ const AboutUs: NextPageWithLayout = () => {
   );
 };
 
-export default AboutUs;
+export default Services;
 
-AboutUs.getLayout = function getLayout(page: ReactElement, props: AppPageLayoutProps) {
+Services.getLayout = function getLayout(page: ReactElement, props: AppPageLayoutProps) {
   return <Wrapper {...props}>{page}</Wrapper>;
 };

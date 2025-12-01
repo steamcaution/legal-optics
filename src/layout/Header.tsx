@@ -13,8 +13,9 @@ export default function Header() {
         <Nav>
           <Link href="/">Home</Link>
           <Link href="/about">About us</Link>
-          <Link href="/">Login</Link>
-          <Link href="/">Join</Link>
+          <Link href="/service">Service</Link>
+          {/*<Link href="/">Login</Link>*/}
+          {/*<Link href="/">Join</Link>*/}
         </Nav>
       </HeaderInner>
     </HeaderWrap>

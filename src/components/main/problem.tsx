@@ -6,7 +6,6 @@ import {
   ProblemIcon,
   ProblemList,
   ProblemSection,
-  SectionLead,
   SectionTitle
 } from '../../styles/about.styles';
 
@@ -14,7 +13,6 @@ export const Problem = () => {
   return (
     <ProblemSection>
       <SectionTitle>이런 고민 있으신가요?</SectionTitle>
-      <SectionLead>법률 실무자들이 공통적으로 겪는 문제들입니다</SectionLead>
       <ProblemGrid>
         <ProblemCard>
           <ProblemIcon>📄</ProblemIcon>

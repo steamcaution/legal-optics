@@ -1,12 +1,28 @@
 import styled from '@emotion/styled';
 
-export const MainTitle = styled.h1`
+export const HomeMainSection = styled.div`
+  height: calc(100vh - 110px);
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  background-image: url('/legal-optics/img/background/image8.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+`;
+
+export const HomeMainInner = styled.div`
+  position: relative;
+  bottom: 18vh;
+  left: 6vw;
+`;
+
+export const HomeMainTitle = styled.h1`
   font-size: 52px;
   line-height: 1.3;
   color: #ffffff;
   font-weight: 700;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
-  margin-top: -60vh;
   margin-bottom: 24px;
 `;
 

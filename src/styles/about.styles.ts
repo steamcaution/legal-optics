@@ -2,13 +2,13 @@ import styled from '@emotion/styled';
 
 // Problem Section
 export const ProblemSection = styled.section`
-  padding: 100px 0;
-  background: #0b161e;
+  padding: 90px 180px;
+  background: #252525;
 `;
 
 export const SectionTitle = styled.h2`
   font-size: 36px;
-  font-weight: 700;
+  font-weight: 800;
   color: #ffffff;
   margin: 0 0 16px 0;
   text-align: center;
@@ -44,7 +44,7 @@ export const SectionLead = styled.p`
 export const ProblemGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
+  gap: 65px;
   margin-top: 60px;
 
   @media (max-width: 900px) {
@@ -57,8 +57,10 @@ export const ProblemGrid = styled.div`
 `;
 
 export const ProblemCard = styled.div`
-  background: #162c3f;
-  padding: 40px 32px;
+  background: #595959;
+  min-width: 255px;
+  max-width: 300px;
+  padding: 40px;
   border-radius: 12px;
   border: 1px solid rgba(94, 82, 64, 0.2);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
@@ -77,13 +79,16 @@ export const ProblemCard = styled.div`
 export const ProblemIcon = styled.div`
   font-size: 56px;
   margin-bottom: 20px;
+  text-align: center;
 `;
 
 export const ProblemCardTitle = styled.h3`
-  font-size: 18px;
+  font-size: 24px;
   color: #ffffff;
   font-weight: 700;
-  margin: 16px 0;
+  margin-top: 20px;
+  margin-bottom: 25px;
+  text-align: center;
 
   @media (max-width: 768px) {
     font-size: 16px;
@@ -97,9 +102,9 @@ export const ProblemList = styled.ul`
 
   li {
     font-size: 14px;
-    color: #a8c5cc;
+    color: #ffffff;
     line-height: 1.8;
-    padding: 8px 0;
+    padding: 2px 0;
     padding-left: 24px;
     position: relative;
 
@@ -107,115 +112,9 @@ export const ProblemList = styled.ul`
       content: '•';
       position: absolute;
       left: 0;
-      color: #32b8c6;
+      color: #ffffff;
       font-weight: bold;
     }
-  }
-`;
-
-// Solutions Section
-export const SolutionsSection = styled.section`
-  padding: 100px 0;
-  background: #0b161e;
-`;
-
-export const SolutionsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 32px;
-  margin-top: 60px;
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 520px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-export const SolutionCard = styled.div`
-  background: #162c3f;
-  padding: 40px 32px;
-  border-radius: 12px;
-  border: 1px solid rgba(94, 82, 64, 0.2);
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  h3 {
-    font-size: 18px;
-    color: #ffffff;
-    font-weight: 700;
-    margin: 16px 0;
-
-    @media (max-width: 768px) {
-      font-size: 16px;
-    }
-  }
-
-  p {
-    font-size: 14px;
-    color: #a8c5cc;
-    line-height: 1.6;
-    margin: 12px 0;
-  }
-
-  @media (max-width: 768px) {
-    padding: 30px 20px;
-  }
-`;
-
-export const SolutionBadge = styled.div`
-  display: inline-block;
-  background: #32b8c6;
-  color: #0b161e;
-  padding: 6px 16px;
-  border-radius: 9999px;
-  font-size: 12px;
-  font-weight: bold;
-  margin-bottom: 16px;
-`;
-
-export const FeatureList = styled.ul`
-  list-style: none;
-  padding: 0;
-  margin: 16px 0;
-
-  li {
-    font-size: 14px;
-    color: #a8c5cc;
-    line-height: 1.8;
-    padding: 8px 0;
-    padding-left: 24px;
-    position: relative;
-
-    &::before {
-      content: '✓';
-      position: absolute;
-      left: 0;
-      color: #32b8c6;
-      font-weight: bold;
-    }
-  }
-`;
-
-export const SolutionLink = styled.a`
-  display: inline-block;
-  color: #32b8c6;
-  text-decoration: none;
-  font-weight: 600;
-  margin-top: 16px;
-  font-size: 14px;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-
-  &:hover {
-    color: #4dd9e8;
-    transform: translateX(5px);
   }
 `;
 

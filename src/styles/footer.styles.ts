@@ -193,6 +193,11 @@ export const SocialLinks = styled.div`
   @media (max-width: 768px) {
     justify-content: flex-start;
   }
+
+  img {
+    width: 30px;
+    height: 30px;
+  }
 `;
 
 export const FooterBottomBar = styled.div`

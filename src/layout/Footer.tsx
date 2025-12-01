@@ -40,10 +40,18 @@ export default function Footer() {
 
             <SocialLinks>
               <a href="http://pf.kakao.com/_DJxgkn" title="KakaoTalk" target="_blank" rel="noopener noreferrer">
-                <img src="/legal-optics/img/kakao.png" alt="KakaoTalk" width={24} />
+                <img src="/legal-optics/img/kakao.png" alt="KakaoTalk" />
               </a>
               <a href="https://blog.naver.com/legalpapers" title="Blog" target="_blank" rel="noopener noreferrer">
-                <img src="/legal-optics/img/naver_blog.png" alt="NaverBlog" width={34} />
+                <img src="/legal-optics/img/naver_blog.png" alt="NaverBlog" />
+              </a>
+              <a
+                href="https://www.instagram.com/legaloptics/"
+                title="Instagram"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <img src="/legal-optics/img/instagram.png" alt="Instagram" />
               </a>
             </SocialLinks>
           </InfoTop>
@@ -54,7 +62,7 @@ export default function Footer() {
                 <div className="company-name">리걸옵틱스</div>
                 <p>대표자 : 최정인</p>
                 <p>사업자등록번호 : 501-12-33730</p>
-                <p>통신판매업 신고번호 : 2025-0000-00000</p>
+                {/*<p>통신판매업 신고번호 : 2025-0000-00000</p>*/}
                 <p>(47247) 부산광역시 부산진구 동천로 116, 3층 오픈오피스 B25, 26 (전포동, 한신밴)</p>
               </CompanyInfo>
             </LeftSection>
@@ -63,10 +71,10 @@ export default function Footer() {
             <RightSection>
               <ContactGroup>
                 <p>
-                  <strong>TEL</strong> : 02-6207-1122
+                  <strong>TEL</strong> : 010-6801-9091
                 </p>
                 <p>
-                  <strong>E-MAIL</strong> : info@legaloptics.com
+                  <strong>E-MAIL</strong> : legal-optics1@gmail.com
                 </p>
               </ContactGroup>
             </RightSection>

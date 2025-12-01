@@ -59,11 +59,9 @@ export const Nav = styled.nav`
     font-weight: bold;
     position: relative;
     padding-left: 6px;
-    transition: color 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-
-    &:hover {
-      color: #32b8c6;
-    }
+    transition:
+      color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
+      opacity 0.2s ease;
 
     &::before {
       content: '';
@@ -77,6 +75,10 @@ export const Nav = styled.nav`
       box-shadow:
         inset 0 1px 0 rgba(255, 255, 255, 0.15),
         inset 0 -1px 0 rgba(0, 0, 0, 0.03);
+      opacity: 0;
+    }
+    &:hover::before {
+      opacity: 1;
     }
   }
 `;
@@ -89,23 +91,6 @@ export const Container = styled.div`
   background: #0b161e;
 `;
 
-export const ContainerInner = styled.div<{ isMainSection?: boolean }>`
-  width: ${props => (props.isMainSection ? 'calc(100%-60px)' : '1200px')};
+export const ContainerInner = styled.div`
   margin: 0 auto;
-  padding: 0 30px;
-
-  ${props =>
-    props.isMainSection &&
-    `
-      height: 100vh;
-      display: flex;
-      flex-direction: column;
-      justify-content: flex-end;
-      align-items: flex-start;
-      background-image: url('/legal-optics/img/background/image8.png');
-      background-size: cover;
-      background-position: center;
-      background-repeat: no-repeat;
-      padding: 0 100px;
-  `}
 `;
