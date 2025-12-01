@@ -26,6 +26,7 @@ import {
   TechnologySection,
   TechProblemSolution
 } from '../../styles/about.styles';
+import { Services } from '../../components/about/services';
 
 const AboutUs: NextPageWithLayout = () => {
   return (
@@ -174,6 +175,8 @@ const AboutUs: NextPageWithLayout = () => {
           </TechContent>
         </div>
       </TechnologySection>
+
+      <Services />
     </>
   );
 };
