@@ -67,7 +67,7 @@ export const Services = () => {
         '법률 브랜드 전략 구조화 프로젝트 다수 수행',
         '변호사 영상·SNS·콘텐츠 풀패키지 구축 PM'
       ],
-      image: 'img/full_lawyer.png'
+      image: '/legal-optics/img/full_lawyer.png'
     },
     director: {
       name: '대표 최정인',
@@ -81,7 +81,7 @@ export const Services = () => {
         'Legal Optics 자동화 시스템 핵심 개발자',
         'Python · Node.js · FastAPI 기반 백엔드 개발'
       ],
-      image: 'img/full_director.png'
+      image: '/legal-optics/img/full_director.png'
     }
   };
 
@@ -94,19 +94,19 @@ export const Services = () => {
     {
       name: 'YouTube',
       sub: '사건파일 시리즈',
-      image: 'img/video_sum.png',
+      image: '/legal-optics/img/video_sum.png',
       link: 'https://nas.sonny.co.kr/api/public/dl/PIARiVaZ?inline=true'
     },
     {
       name: 'Blog',
       sub: '판례·송무사례 해설',
-      image: 'img/blog.jpg',
+      image: '/legal-optics/img/blog.jpg',
       link: 'https://blog.naver.com/legalpapers'
     },
     {
       name: 'Instagram',
       sub: '브랜딩·일상 스냅',
-      image: 'img/star.png',
+      image: '/legal-optics/img/star.png',
       link: 'https://www.instagram.com/p/DRgNFgTEnRm/'
     }
   ];
