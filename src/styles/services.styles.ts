@@ -223,10 +223,6 @@ export const SnsFlex = styled.div`
   gap: 26px;
   justify-content: center;
   flex-wrap: wrap;
-
-  @media (max-width: 900px) {
-    gap: 16px;
-  }
 `;
 
 export const SnsCardLink = styled.a`
@@ -245,11 +241,6 @@ export const SnsCardLink = styled.a`
 
   &:hover {
     transform: translateY(-8px) scale(1.03);
-  }
-
-  @media (max-width: 900px) {
-    width: 100%;
-    max-width: 350px;
   }
 `;
 

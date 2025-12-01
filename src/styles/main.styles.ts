@@ -1,7 +1,8 @@
 import styled from '@emotion/styled';
 
 export const HomeMainSection = styled.div`
-  height: calc(100vh - 110px);
+  min-height: 600px;
+  height: calc(100vh - 100px);
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
@@ -13,8 +14,9 @@ export const HomeMainSection = styled.div`
 
 export const HomeMainInner = styled.div`
   position: relative;
-  bottom: 18vh;
-  left: 6vw;
+  min-bottom: 200px;
+  bottom: 100px;
+  left: 100px;
 `;
 
 export const HomeMainTitle = styled.h1`

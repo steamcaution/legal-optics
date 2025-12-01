@@ -24,14 +24,6 @@ export const SolutionsHeader = styled.div`
     color: #ffffff;
     margin: 0 0 16px 0;
     letter-spacing: -0.01em;
-
-    @media (max-width: 768px) {
-      font-size: 32px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 24px;
-    }
   }
 
   p {
@@ -39,10 +31,6 @@ export const SolutionsHeader = styled.div`
     color: #b0d4dc;
     margin: 0;
     line-height: 1.6;
-
-    @media (max-width: 768px) {
-      font-size: 16px;
-    }
   }
 `;
 
@@ -50,14 +38,6 @@ export const SolutionsTitle = styled.div`
   font-size: 40px;
   color: #ffffff;
   padding-bottom: 15px;
-
-  @media (max-width: 768px) {
-    font-size: 32px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 24px;
-  }
 `;
 
 export const SolutionsTitleBrand = styled.span`
@@ -80,10 +60,6 @@ export const SolutionsLead = styled.div`
   color: #b0d4dc;
   margin-bottom: 10px;
   line-height: 1.6;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 `;
 
 export const SolutionsGrid = styled.div`
@@ -92,15 +68,6 @@ export const SolutionsGrid = styled.div`
   gap: 40px;
   width: 100%;
   margin: 50px auto;
-
-  @media (max-width: 1024px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-    gap: 60px;
-  }
 `;
 
 export const SolutionItem = styled.div<{ reverse?: boolean }>`
@@ -138,10 +105,6 @@ export const SolutionItem = styled.div<{ reverse?: boolean }>`
     background: rgba(50, 184, 198, 0.08);
     border-color: rgba(50, 184, 198, 0.2);
     transform: translateY(-8px);
-  }
-
-  @media (max-width: 768px) {
-    padding: 32px;
   }
 
   @keyframes slideInUp {
@@ -184,16 +147,6 @@ export const SolutionImg = styled.div`
     object-fit: cover;
     border-radius: 50%;
   }
-
-  @media (max-width: 768px) {
-    width: 160px;
-    height: 160px;
-    border: 8px solid #ffffff;
-    box-shadow:
-      0 0 30px rgba(0, 0, 0, 0.6),
-      0 10px 25px rgba(0, 0, 0, 0.5),
-      inset 0 0 0 1px rgba(255, 255, 255, 0.2);
-  }
 `;
 
 export const SolutionContent = styled.div<{ reverse?: boolean }>`
@@ -223,10 +176,6 @@ export const SolutionTitle = styled.h3`
   color: #ffffff;
   margin: 0 0 16px 0;
   line-height: 1.3;
-
-  @media (max-width: 768px) {
-    font-size: 18px;
-  }
 `;
 
 // Center CTA Button

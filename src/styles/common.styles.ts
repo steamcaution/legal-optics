@@ -12,27 +12,35 @@ export const GlobalFontStyles = `
 `;
 
 export const HeaderWrap = styled.header`
-  background: #0b161e;
+  background: #162c3f;
   color: white;
   box-shadow: none;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 100px;
+  z-index: 1000;
+  padding: 0 80px;
+`;
+
+export const HeaderTop = styled.div`
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
-  height: 110px;
-  z-index: 1000;
-`;
-
-export const HeaderInner = styled.div`
   background: #162c3f;
-  min-width: 1200px;
-  margin: 25px auto 0;
+  color: white;
+  box-shadow: none;
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0 80px;
-  height: 90px;
-  z-index: 1001;
+  height: 15px;
 `;
 
 export const TitleLogo = styled.a`
@@ -53,15 +61,20 @@ export const Nav = styled.nav`
 
   a {
     color: #f8f8f8;
-    font-size: 20px;
+    font-size: 24px;
     text-decoration: none;
-    margin-top: 2px;
+    margin-top: 7px;
     font-weight: bold;
     position: relative;
     padding-left: 6px;
     transition:
       color 0.25s cubic-bezier(0.16, 1, 0.3, 1),
       opacity 0.2s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      transform-origin: center center;
+    }
 
     &::before {
       content: '';
@@ -84,8 +97,9 @@ export const Nav = styled.nav`
 `;
 
 export const Container = styled.div`
-  padding-top: 110px;
-  min-height: calc(100vh - 110px);
+  padding-top: 100px;
+  min-height: 600px;
+  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   background: #0b161e;
