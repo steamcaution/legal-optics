@@ -180,14 +180,19 @@ export const SimpleProcessFlow = styled.div`
 `;
 
 export const SimpleProcessStep = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
-  padding: 40px 32px;
+  padding: 60px 32px 40px;
   background: #162c3f;
   border-radius: 12px;
   border: 1px solid rgba(94, 82, 64, 0.2);
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 215px;
+  height: 180px;
 
   &:hover {
     transform: translateY(-8px);
@@ -197,7 +202,6 @@ export const SimpleProcessStep = styled.div`
   h4 {
     font-size: 18px;
     color: #ffffff;
-    margin: 12px 0;
     font-weight: bold;
   }
 
@@ -205,7 +209,6 @@ export const SimpleProcessStep = styled.div`
     font-size: 14px;
     color: #a8c5cc;
     line-height: 1.6;
-    margin: 0;
     word-break: keep-all;
   }
 `;
@@ -229,10 +232,10 @@ export const SimpleStepNumber = styled.div`
 `;
 
 export const SimpleStepIcon = styled.div`
-  margin: 20px 0;
+  height: 75px;
 
   img {
-    width: 70px;
+    height: 75px;
     filter: drop-shadow(0 0 10px rgba(0, 128, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 128, 255, 0.6));
     transition: all 0.3s ease;
   }

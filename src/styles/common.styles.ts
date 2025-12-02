@@ -13,17 +13,14 @@ export const GlobalFontStyles = css`
 `;
 
 export const HeaderWrap = styled.header`
-  background: #162c3f;
+  background: rgba(22, 44, 63, 0.6);
   color: white;
   box-shadow: none;
   position: fixed;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   top: 0;
   left: 0;
   right: 0;
-  height: 100px;
+  height: 90px;
   min-width: 600px;
   z-index: 1000;
   padding: 0 80px;
@@ -35,23 +32,27 @@ export const HeaderTop = styled.div`
   top: 0;
   left: 0;
   right: 0;
-  background: #162c3f;
+  background: #0b161e;
   color: white;
   box-shadow: none;
+  padding: 0 80px;
+  height: 15px;
+`;
+
+export const HeaderInnerItem = styled.div`
+  margin-top: 26px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 80px;
-  height: 15px;
 `;
 
 export const TitleLogo = styled.a`
   display: flex;
   align-items: center;
-  margin-bottom: 5px;
 
   img {
     display: block;
+    height: 50px;
   }
 `;
 
@@ -63,7 +64,7 @@ export const Nav = styled.nav`
 
   a {
     color: #f8f8f8;
-    font-size: 24px;
+    font-size: 22px;
     text-decoration: none;
     margin-top: 7px;
     font-weight: bold;
@@ -99,7 +100,7 @@ export const Nav = styled.nav`
 `;
 
 export const Container = styled.div`
-  padding-top: 100px;
+  padding-top: 15px;
   min-height: 600px;
   display: flex;
   flex-direction: column;

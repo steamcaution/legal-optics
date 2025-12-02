@@ -85,7 +85,7 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessStep>
               <SimpleStepNumber>1</SimpleStepNumber>
               <SimpleStepIcon>
-                <img src="/legal-optics/img/icons/upload_document.png" alt="문서 업로드" />
+                <img src="/legal-optics/img/icons/upload_document.png" alt="문서 업로드" style={{ height: '65px'}}/>
               </SimpleStepIcon>
               <h4>문서 업로드</h4>
               <p>
@@ -98,7 +98,7 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessStep>
               <SimpleStepNumber>2</SimpleStepNumber>
               <SimpleStepIcon>
-                <img src="/legal-optics/img/icons/automatic_analysis.png" alt="AI 자동 분석" />
+                <img src="/legal-optics/img/icons/automatic_analysis.png" alt="AI 자동 분석" style={{ height: '80px'}}/>
               </SimpleStepIcon>
               <h4>AI 자동 분석</h4>
               <p>
