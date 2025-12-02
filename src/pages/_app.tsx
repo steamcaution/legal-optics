@@ -9,6 +9,7 @@ import '../styles/_base.scss';
 import { createAppCache } from '../lib/create-emotion-cache';
 import { GlobalFontStyles } from '../styles/common.styles';
 import Script from 'next/script';
+import { FloatingButton } from '../components/floating';
 
 export type NextPageWithLayout<P = AppPageLayoutProps, IP = P> = NextPage<P, IP> & {
   getLayout?: (page: ReactElement, props: AppPageLayoutProps) => ReactNode;
@@ -44,6 +45,7 @@ export default function MyApp({ Component, pageProps, emotionCache = clientSideE
       <Script src="https://nsp.pay.naver.com/sdk/js/naverpay.min.js" strategy="beforeInteractive" />
       <Global styles={GlobalFontStyles} />
       {getLayout(<Component {...pageProps} />, pageProps)}
+      <FloatingButton />
     </CacheProvider>
   );
 }

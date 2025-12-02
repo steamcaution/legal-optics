@@ -67,7 +67,7 @@ export const Price = () => {
             <PricingBtn
               onClick={() => {
                 if (plan.id === 'unlimited') {
-                  alert('무제한 요금제는 별도 문의가 필요합니다.');
+                  window.open('https://pf.kakao.com/_DJxgkn');
                   return;
                 }
                 handlePay(plan.title, plan.price);
