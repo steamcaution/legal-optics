@@ -86,7 +86,9 @@ const AboutUs: NextPageWithLayout = () => {
           <SimpleProcessFlow>
             <SimpleProcessStep>
               <SimpleStepNumber>1</SimpleStepNumber>
-              <SimpleStepIcon>📤</SimpleStepIcon>
+              <SimpleStepIcon>
+                <img src="/legal-optics/img/icon/add-document.png" alt="add_document" />
+              </SimpleStepIcon>
               <h4>문서 업로드</h4>
               <p>
                 처리하고 싶은 법률 문서를
@@ -97,7 +99,9 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessArrow>→</SimpleProcessArrow>
             <SimpleProcessStep>
               <SimpleStepNumber>2</SimpleStepNumber>
-              <SimpleStepIcon>🤖</SimpleStepIcon>
+              <SimpleStepIcon>
+                <img src="/legal-optics/img/icon/programming.png" alt="ai" />
+              </SimpleStepIcon>
               <h4>AI 자동 분석</h4>
               <p>
                 AI가 문서를 읽고 분석하여
@@ -108,7 +112,9 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessArrow>→</SimpleProcessArrow>
             <SimpleProcessStep>
               <SimpleStepNumber>3</SimpleStepNumber>
-              <SimpleStepIcon>✅</SimpleStepIcon>
+              <SimpleStepIcon>
+                <img src="/legal-optics/img/icon/documentation.png" alt="ai" />
+              </SimpleStepIcon>
               <h4>결과 확인 및 다운로드</h4>
               <p>
                 정리된 데이터를 확인하고
@@ -149,29 +155,45 @@ const AboutUs: NextPageWithLayout = () => {
 
             <CompetitiveGrid>
               <CompetitiveCard>
-                <CompIcon>🤖</CompIcon>
+                <CompIcon>
+                  <img src="/legal-optics/img/icon/artificial-intelligence.png" alt="ai_ocr" />
+                </CompIcon>
                 <h4>AI + OCR 기술</h4>
-                <p>법률 문서 자동 인식 및 텍스트 추출, 자체 개발 AI 모듈로 문서 인식 정확도 개선</p>
+                <p>법률 문서 자동 인식 및 텍스트 추출,</p>
+                <p>자체 개발 AI로 문서 인식 정확도 개선</p>
               </CompetitiveCard>
               <CompetitiveCard>
-                <CompIcon>🎯</CompIcon>
+                <CompIcon>
+                  <img src="/legal-optics/img/icon/data-collection.png" alt="data" />
+                </CompIcon>
                 <h4>맞춤형 처리</h4>
-                <p>금융사별 거래내역서 맞춤형 처리, 실무 활용 가능한 데이터 형태 제공</p>
+                <p>금융사별 거래내역서 맞춤형 처리,</p>
+                <p>실무 활용 가능한 데이터 형태 제공</p>
               </CompetitiveCard>
               <CompetitiveCard>
-                <CompIcon>🔧</CompIcon>
+                <CompIcon>
+                  <img src="/legal-optics/img/icon/folder.png" alt="document" />
+                </CompIcon>
                 <h4>모듈화 구조</h4>
-                <p>다양한 문서/금융 데이터 확장성 확보, 새로운 문서 유형 추가 용이</p>
+                <p>다양한 문서/금융 데이터 확장성 확보,</p>
+                <p>새로운 문서 유형 추가 용이</p>
               </CompetitiveCard>
               <CompetitiveCard>
-                <CompIcon>💻</CompIcon>
+                <CompIcon>
+                  <img src="/legal-optics/img/icon/advertising.png" alt="uiux" />
+                </CompIcon>
                 <h4>직관적 UI/UX</h4>
-                <p>실무자가 쉽게 문서 업로드 및 검토, 간편한 드래그앤드롭 인터페이스</p>
+                <p>실무자가 쉽게 문서 업로드 및 검토,</p>
+                <p>간편한 드래그앤드롭 인터페이스</p>
               </CompetitiveCard>
               <CompetitiveCard>
-                <CompIcon>💰</CompIcon>
+                <CompIcon>
+                  <img src="/legal-optics/img/icon/salary.png" alt="money" />
+                </CompIcon>
                 <h4>합리적 가격</h4>
-                <p>경쟁사 대비 투명하고 합리적한 가격, SaaS 모델로 중소형 법률 사무소도 쉽게 도입</p>
+                <p>경쟁사 대비 투명하고 합리적한 가격,</p>
+                <p>SaaS 모델로 중소형 법률 사무소도</p>
+                <p>쉽게 도입</p>
               </CompetitiveCard>
             </CompetitiveGrid>
           </TechContent>

@@ -28,6 +28,7 @@ export const ProblemGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 32px;
   margin-top: 60px;
+  padding: 0 30px;
 `;
 
 export const ProblemCard = styled.div`
@@ -47,6 +48,12 @@ export const ProblemCard = styled.div`
 export const ProblemIcon = styled.div`
   font-size: 56px;
   margin-bottom: 20px;
+  text-align: center;
+  padding-bottom: 30px;
+
+  img {
+    width: 180px;
+  }
 `;
 
 export const ProblemCardTitle = styled.h3`
@@ -222,6 +229,10 @@ export const SimpleStepNumber = styled.div`
 export const SimpleStepIcon = styled.div`
   font-size: 56px;
   margin: 20px 0;
+
+  img {
+    width: 70px;
+  }
 `;
 
 export const SimpleProcessArrow = styled.div`
@@ -233,7 +244,7 @@ export const SimpleProcessArrow = styled.div`
 
 // Technology Section
 export const TechnologySection = styled.section`
-  padding: 100px 0;
+  padding: 100px 30px;
   background: #0b161e;
 `;
 
@@ -330,6 +341,10 @@ export const CompetitiveCard = styled.div`
 `;
 
 export const CompIcon = styled.div`
-  font-size: 40px;
-  margin-bottom: 12px;
+  font-size: 70px;
+  margin-bottom: 30px;
+
+  img {
+    width: 70px;
+  }
 `;
