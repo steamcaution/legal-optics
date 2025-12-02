@@ -36,7 +36,7 @@ import {
   DetailBox,
   DetailImage,
   DetailText
-} from '../../styles/services.styles';
+} from '../../styles/services.styles'
 
 interface PersonDetail {
   [key: string]: {

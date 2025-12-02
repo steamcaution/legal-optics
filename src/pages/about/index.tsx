@@ -131,7 +131,7 @@ const AboutUs: NextPageWithLayout = () => {
           <SectionLead>법률 문서 특화 AI 기술로 높은 정확도를 자랑합니다</SectionLead>
           <TechContent>
             <TechProblemSolution>
-              <ProblemBox>
+                            <ProblemBox>
                 <h3>❌ 기존 솔루션의 한계</h3>
                 <ul>
                   <li>기울어짐, 어두움, 배경 노이즈로 인해 OCR 정확도 저하</li>
@@ -144,9 +144,9 @@ const AboutUs: NextPageWithLayout = () => {
                 <h3>✅ LegalOptics의 솔루션</h3>
                 <ul>
                   <li>AI 기반 전처리로 OCR 최적 입력 생성</li>
-                  <li>표, 항목, 도장 영역을 자동 탐지하여 영역별 최적 OCR 수행</li>
                   <li>사전, 규칙 기반 교정 알고리즘으로 오인식 최소화</li>
                   <li>인식된 텍스트를 구조화(필드 매핑, JSON/엑셀 변환)</li>
+                  <li>표, 항목, 도장 영역을 자동 탐지하여 영역별 최적 OCR 수행</li>
                 </ul>
               </SolutionBox>
             </TechProblemSolution>

@@ -58,7 +58,7 @@ export default function Footer() {
                 <strong>TEL</strong> : 010-6801-9091
               </p>
               <p>
-                <strong>E-MAIL</strong> : legal-optics1@gmail.com
+                <strong>E-MAIL</strong> : legaloptics1@gmail.com
               </p>
             </ContactGroup>
           </RightSection>
