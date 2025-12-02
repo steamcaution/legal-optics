@@ -1,13 +1,14 @@
 import styled from '@emotion/styled';
+import { css } from '@emotion/react';
 
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? '/legal-optics';
 
-export const GlobalFontStyles = `
+export const GlobalFontStyles = css`
   @font-face {
     font-family: 'BookkMyungjo';
-    src: url('${basePath}/fonts/BookkMyungjo_Light.ttf') format('truetype');
-    font-style: normal;
     font-display: fallback;
+    src: url('${basePath}/fonts/BookkMyungjo_Light.woff') format('truetype');
+    font-style: normal;
   }
 `;
 
@@ -23,6 +24,7 @@ export const HeaderWrap = styled.header`
   left: 0;
   right: 0;
   height: 100px;
+  min-width: 600px;
   z-index: 1000;
   padding: 0 80px;
 `;

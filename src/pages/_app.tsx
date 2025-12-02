@@ -1,7 +1,7 @@
 import type { AppProps } from 'next/app';
 import { ReactElement, ReactNode } from 'react';
-import { CacheProvider, css, Global } from '@emotion/react';
 import type { EmotionCache } from '@emotion/react';
+import { CacheProvider, Global } from '@emotion/react';
 import Head from 'next/head';
 import { AppPageLayoutProps } from '../layout/wrapper.types';
 import { NextPage } from 'next';
@@ -32,9 +32,9 @@ export default function MyApp({ Component, pageProps, emotionCache = clientSideE
       <Head>
         <link
           rel="preload"
-          href="/legal-optics/fonts/BookkMyungjo_Light.ttf"
+          href="/legal-optics/fonts/BookkMyungjo_Light.woff"
           as="font"
-          type="font/ttf"
+          type="font/woff"
           crossOrigin="anonymous"
         />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -42,11 +42,7 @@ export default function MyApp({ Component, pageProps, emotionCache = clientSideE
         <title>Legal Optics</title>
       </Head>
       <Script src="https://nsp.pay.naver.com/sdk/js/naverpay.min.js" strategy="beforeInteractive" />
-      <Global
-        styles={css`
-          ${GlobalFontStyles}
-        `}
-      />
+      <Global styles={GlobalFontStyles} />
       {getLayout(<Component {...pageProps} />, pageProps)}
     </CacheProvider>
   );

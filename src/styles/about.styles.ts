@@ -46,13 +46,13 @@ export const ProblemCard = styled.div`
 `;
 
 export const ProblemIcon = styled.div`
-  font-size: 56px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
-  padding-bottom: 30px;
 
   img {
-    width: 180px;
+    width: 130px;
+    filter: drop-shadow(0 0 10px rgba(0, 128, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 128, 255, 0.6));
+    transition: all 0.3s ease;
   }
 `;
 
@@ -124,6 +124,7 @@ export const SolutionCard = styled.div`
     color: #a8c5cc;
     line-height: 1.6;
     margin: 12px 0;
+    word-break: keep-all;
   }
 `;
 
@@ -205,6 +206,7 @@ export const SimpleProcessStep = styled.div`
     color: #a8c5cc;
     line-height: 1.6;
     margin: 0;
+    word-break: keep-all;
   }
 `;
 
@@ -320,6 +322,7 @@ export const CompetitiveCard = styled.div`
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  word-break: keep-all;
 
   &:hover {
     transform: translateY(-8px);
