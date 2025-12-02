@@ -1,10 +1,13 @@
 import styled from '@emotion/styled';
 
 export const FooterWrap = styled.footer`
-  margin-top: 0;
+  margin-top: auto;
+  background: #0e293c;
+  color: #cfe6ea;
+  padding: 32px 0;
 `;
 
-export const FooterTop = styled.div`
+export const FooterMsgWrap = styled.div`
   background: #142530;
   color: #fff;
   position: relative;
@@ -23,7 +26,7 @@ export const FooterTop = styled.div`
   }
 `;
 
-export const FooterTopInner = styled.div`
+export const FooterMessageInner = styled.div`
   position: relative;
   max-width: 1200px;
   margin: 0 auto;
@@ -48,11 +51,7 @@ export const FooterTopInner = styled.div`
   }
 `;
 
-export const FooterBottom = styled.div`
-  background: #0e293c;
-  color: #cfe6ea;
-  padding: 32px 0;
-`;
+export const FooterBottom = styled.div``;
 
 export const InfoWrap = styled.div``;
 export const InfoTop = styled.div`

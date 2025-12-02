@@ -99,7 +99,6 @@ export const Nav = styled.nav`
 export const Container = styled.div`
   padding-top: 100px;
   min-height: 600px;
-  height: calc(100vh - 100px);
   display: flex;
   flex-direction: column;
   background: #0b161e;

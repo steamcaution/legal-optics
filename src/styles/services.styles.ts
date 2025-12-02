@@ -73,7 +73,7 @@ export const OrgSection = styled.div`
   max-width: 900px;
   margin: 0 auto;
   text-align: center;
-  padding: 10px 0 40px;
+  padding-bottom: 80px;
 `;
 
 export const OrgWrapper = styled.div`
@@ -177,23 +177,22 @@ export const DetailText = styled.div`
   p {
     opacity: 0.8;
     line-height: 1.6;
-    margin-bottom: 20px;
     white-space: pre-line;
   }
 
   div {
-    margin-bottom: 16px;
+    margin-top: 30px;
 
     strong {
       color: #fff;
       display: block;
-      margin-bottom: 6px;
+      margin-bottom: 8px;
     }
 
     span {
       opacity: 0.75;
       display: block;
-      line-height: 1.6;
+      line-height: 1.8;
     }
   }
 `;
@@ -277,7 +276,7 @@ export const SnsSub = styled.div`
 
 export const PricingWrapper = styled.div`
   text-align: center;
-  padding: 40px 20px;
+  padding: 80px 0;
   max-width: 1100px;
   margin: 0 auto;
 `;
@@ -303,12 +302,14 @@ export const PricingGrid = styled.div`
 
 export const PricingCard = styled.div`
   background: #1a242f;
-  width: 250px;
-  padding: 32px 0 40px;
+  width: 230px;
+  padding: 40px 0;
   border-radius: 16px;
   border: 1px solid rgba(168, 197, 204, 0.15);
   display: flex;
   flex-direction: column;
+  gap: 12px;
+  justify-content: space-between;
   align-items: center;
   transition: 0.25s;
 
@@ -320,26 +321,13 @@ export const PricingCard = styled.div`
 
 export const PricingCardTitle = styled.h3`
   color: #fff;
-  margin-bottom: 6px;
-`;
-
-export const PricingPeriod = styled.p`
-  color: #a8c5cc;
-  opacity: 0.8;
-  margin-bottom: 20px;
-`;
-
-export const PricingOld = styled.p`
-  color: #a8c5cc;
-  text-decoration: line-through;
-  opacity: 0.55;
-  margin-bottom: 4px;
+  font-size: 16px;
 `;
 
 export const PricingSale = styled.p`
   color: #ff6b6b;
   font-weight: 600;
-  margin-bottom: 6px;
+  font-size: 24px;
 `;
 
 export const PricingPrice = styled.div`

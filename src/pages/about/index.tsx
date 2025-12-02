@@ -26,7 +26,9 @@ import {
   TechnologySection,
   TechProblemSolution
 } from '../../styles/about.styles';
-import { Services } from '../../components/about/services';
+import { FooterMessage } from '../../components/footer/footer_msg';
+import { Organization } from '../../components/about/organization';
+import { Price } from '../../components/about/price';
 
 const AboutUs: NextPageWithLayout = () => {
   return (
@@ -176,7 +178,10 @@ const AboutUs: NextPageWithLayout = () => {
         </div>
       </TechnologySection>
 
-      <Services />
+      {/*<Services />*/}
+      <Organization />
+      <FooterMessage />
+      <Price />
     </>
   );
 };
