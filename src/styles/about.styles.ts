@@ -227,11 +227,12 @@ export const SimpleStepNumber = styled.div`
 `;
 
 export const SimpleStepIcon = styled.div`
-  font-size: 56px;
   margin: 20px 0;
 
   img {
     width: 70px;
+    filter: drop-shadow(0 0 10px rgba(0, 128, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 128, 255, 0.6));
+    transition: all 0.3s ease;
   }
 `;
 
@@ -346,5 +347,7 @@ export const CompIcon = styled.div`
 
   img {
     width: 70px;
+    filter: drop-shadow(0 0 10px rgba(0, 128, 255, 0.7)) drop-shadow(0 0 20px rgba(0, 128, 255, 0.5));
+    transition: all 0.3s ease;
   }
 `;
