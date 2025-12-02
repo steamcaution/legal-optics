@@ -49,12 +49,6 @@ interface PersonDetail {
   };
 }
 
-declare global {
-  interface Window {
-    Naver?: any;
-  }
-}
-
 export const Services = () => {
   const [activeTab, setActiveTab] = useState('org');
   const [openPerson, setOpenPerson] = useState<string | null>(null);
@@ -283,9 +277,7 @@ export const Services = () => {
                         return;
                       }
 
-                      const priceValue = plan.price
-                        ? Number(plan.price.replace(/[^0-9]/g, ''))
-                        : null;
+                      const priceValue = plan.price ? Number(plan.price.replace(/[^0-9]/g, '')) : null;
 
                       handlePay(plan.title, priceValue);
                     }}
