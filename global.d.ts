@@ -1,8 +1,12 @@
-// global.d.ts
 declare global {
   interface Window {
-    Kakao: any
+    Kakao: any;
+    Naver?: {
+      Pay: {
+        create: (config: any) => any;
+      };
+    };
   }
 }
 
-export {}
+export {};
