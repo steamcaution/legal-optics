@@ -7,7 +7,7 @@ export default function Header() {
     <HeaderWrap>
       <HeaderTop />
       <HeaderInnerItem>
-        <TitleLogo href="/legal-optics">
+        <TitleLogo href="/">
           <img src="/img/title_logo.png" alt="Legal Optics" />
         </TitleLogo>
 
