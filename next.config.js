@@ -11,7 +11,7 @@ const nextConfig = {
       use: {
         loader: 'string-replace-loader',
         options: {
-          search: '(/img/|/fonts/|/icon/)',
+          search: '(/img/|/fonts/|/icons/|/icon/)',
           replace: match => {
             const prefix = process.env.NEXT_PUBLIC_APP_ENV === 'github' ? '/legal-optics' : '';
             return prefix + match;
