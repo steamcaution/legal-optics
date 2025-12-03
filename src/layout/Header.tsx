@@ -9,7 +9,7 @@ export default function Header() {
       <HeaderTop />
       <HeaderInnerItem>
         <TitleLogo>
-          <Link href={getAssetPath('/')}>
+          <Link href="/">
             <img src={getAssetPath('/img/title_logo.png')} alt="Legal Optics" />
           </Link>
         </TitleLogo>

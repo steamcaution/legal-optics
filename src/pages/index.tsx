@@ -5,7 +5,6 @@ import Wrapper from '../layout/wrapper';
 import { AboutButton, HomeMainInner, HomeMainSection, HomeMainTitle } from '../styles/main.styles';
 import { FooterMessage } from '../components/footer/footer_msg';
 import Link from 'next/link';
-import { getAssetPath } from '../lib/getAssertPath';
 
 const Main: NextPageWithLayout = () => {
   return (
@@ -18,7 +17,7 @@ const Main: NextPageWithLayout = () => {
             지금 경험하세요
           </HomeMainTitle>
           <AboutButton>
-            <Link href={getAssetPath('/about')}>Go to LegalOptics &gt;</Link>
+            <Link href="/about">Go to LegalOptics &gt;</Link>
           </AboutButton>
         </HomeMainInner>
       </HomeMainSection>
