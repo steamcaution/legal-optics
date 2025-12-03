@@ -2,7 +2,6 @@ import React, { ReactElement } from 'react';
 import Wrapper from '../../layout/wrapper';
 import { AppPageLayoutProps } from '../../layout/wrapper.types';
 import { NextPageWithLayout } from '../_app';
-import { Problem } from '../../components/about/problem';
 import {
   CompetitiveCard,
   CompetitiveGrid,
@@ -29,16 +28,15 @@ import {
 import { FooterMessage } from '../../components/footer/footer_msg';
 import { Organization } from '../../components/about/organization';
 import { Price } from '../../components/about/price';
-import { Problem } from '../../components/main/problem';
-import { Solutions } from '../../components/main/solutions';
-import { Process } from '../../components/about/process';
-import { Technology } from '../../components/about/tech';
+import { MainProblem } from '../../components/main/mainProblem';
 
 const AboutUs: NextPageWithLayout = () => {
   return (
     <>
-      <Problem />
-
+      <MainProblem />
+      <Organization />
+      <FooterMessage />
+      <Price />
       {/* Solutions Section */}
       <SolutionsSection id="solutions">
         <SectionTitle>LegalOptics 솔루션</SectionTitle>
@@ -89,7 +87,7 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessStep>
               <SimpleStepNumber>1</SimpleStepNumber>
               <SimpleStepIcon>
-                <img src="/legal-optics/img/icons/upload_document.png" alt="문서 업로드" style={{ height: '65px'}}/>
+                <img src="/legal-optics/img/icons/upload_document.png" alt="문서 업로드" style={{ height: '65px' }} />
               </SimpleStepIcon>
               <h4>문서 업로드</h4>
               <p>
@@ -102,7 +100,11 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessStep>
               <SimpleStepNumber>2</SimpleStepNumber>
               <SimpleStepIcon>
-                <img src="/legal-optics/img/icons/automatic_analysis.png" alt="AI 자동 분석" style={{ height: '80px'}}/>
+                <img
+                  src="/legal-optics/img/icons/automatic_analysis.png"
+                  alt="AI 자동 분석"
+                  style={{ height: '80px' }}
+                />
               </SimpleStepIcon>
               <h4>AI 자동 분석</h4>
               <p>
@@ -135,7 +137,7 @@ const AboutUs: NextPageWithLayout = () => {
           <SectionLead>법률 문서 특화 AI 기술로 높은 정확도를 자랑합니다</SectionLead>
           <TechContent>
             <TechProblemSolution>
-                            <ProblemBox>
+              <ProblemBox>
                 <h3>❌ 기존 솔루션의 한계</h3>
                 <ul>
                   <li>기울어짐, 어두움, 배경 노이즈로 인해 OCR 정확도 저하</li>
@@ -200,11 +202,6 @@ const AboutUs: NextPageWithLayout = () => {
           </TechContent>
         </div>
       </TechnologySection>
-
-      {/*<Services />*/}
-      <Organization />
-      <FooterMessage />
-      <Price />
     </>
   );
 };

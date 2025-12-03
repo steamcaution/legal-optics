@@ -2,16 +2,16 @@ import React, { ReactElement } from 'react';
 import Wrapper from '../../layout/wrapper';
 import { AppPageLayoutProps } from '../../layout/wrapper.types';
 import { NextPageWithLayout } from '../_app';
-import { Problem } from '../../components/main/problem';
-import { Solutions } from '../../components/main/solutions';
+import { MainProblem } from '../../components/main/mainProblem';
+import { MainSolutions } from '../../components/main/mainSolutions';
 import { Process } from '../../components/about/process';
 import { Technology } from '../../components/about/tech';
 
 const Services: NextPageWithLayout = () => {
   return (
     <>
-      <Problem />
-      <Solutions />
+      <MainProblem />
+      <MainSolutions />
       <Process />
       <Technology />
     </>

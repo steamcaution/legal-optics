@@ -19,7 +19,7 @@ import {
   SolutionTitle
 } from '../../styles/solutions.styles';
 
-export const Solutions = () => {
+export const MainSolutions = () => {
   const [visibleItems, setVisibleItems] = useState<boolean[]>([false, false, false]);
   const itemRefs = useRef<(HTMLDivElement | null)[]>([]);
 

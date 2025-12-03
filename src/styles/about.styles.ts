@@ -2,7 +2,7 @@ import styled from '@emotion/styled';
 
 // Problem Section
 export const ProblemSection = styled.section`
-  padding: 90px 180px;
+  padding: 90px 30px;
   background: #252525;
 `;
 
@@ -97,10 +97,8 @@ export const SolutionsSection = styled.section`
 `;
 
 export const SolutionsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
   gap: 32px;
-  margin-top: 60px;
 `;
 
 export const SolutionCard = styled.div`

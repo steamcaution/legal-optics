@@ -4,9 +4,8 @@ import { AppPageLayoutProps } from '../layout/wrapper.types';
 import Wrapper from '../layout/wrapper';
 import { AboutButton, HomeMainInner, HomeMainSection, HomeMainTitle } from '../styles/main.styles';
 import { FooterMessage } from '../components/footer/footer_msg';
-import { AboutButton, HomeMainSection, HomeMainInner, HomeMainTitle } from '../styles/main.styles';
-import { Problem } from '../components/main/problem';
-import { Solutions } from '../components/main/solutions';
+import { MainProblem } from '../components/main/mainProblem';
+import { MainSolutions } from '../components/main/mainSolutions';
 
 const Main: NextPageWithLayout = () => {
   return (
@@ -21,8 +20,8 @@ const Main: NextPageWithLayout = () => {
           <AboutButton href="/legal-optics/about">Go to LegalOptics &gt;</AboutButton>
         </HomeMainInner>
       </HomeMainSection>
-      <Problem />
-      <Solutions />
+      <MainProblem />
+      <MainSolutions />
       <FooterMessage />
     </>
   );

@@ -9,7 +9,7 @@ import {
   SectionTitle
 } from '../../styles/about.styles';
 
-export const Problem = () => {
+export const MainProblem = () => {
   return (
     <ProblemSection>
       <SectionTitle>이런 고민 있으신가요?</SectionTitle>
