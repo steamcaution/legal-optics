@@ -31,7 +31,7 @@ export const HomeMainTitle = styled.h1`
   margin-bottom: 24px;
 `;
 
-export const AboutButton = styled.a`
+export const AboutButton = styled.div`
   display: inline-block;
   background: white;
   color: #0b161e;
@@ -42,7 +42,8 @@ export const AboutButton = styled.a`
   font-weight: 700;
   transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-
+  cursor;
+  
   &:hover {
     opacity: 0.8;
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);

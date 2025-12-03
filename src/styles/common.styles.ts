@@ -45,7 +45,7 @@ export const HeaderInnerItem = styled.div`
   justify-content: space-between;
 `;
 
-export const TitleLogo = styled.a`
+export const TitleLogo = styled.div`
   display: flex;
   align-items: center;
 

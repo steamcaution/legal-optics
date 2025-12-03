@@ -8,11 +8,11 @@ export default function Header() {
     <HeaderWrap>
       <HeaderTop />
       <HeaderInnerItem>
-        <TitleLogo>
-          <Link href="/">
+        <Link href="/">
+          <TitleLogo>
             <img src={getAssetPath('/img/title_logo.png')} alt="Legal Optics" />
-          </Link>
-        </TitleLogo>
+          </TitleLogo>
+        </Link>
 
         <Nav>
           <Link href="/">Home</Link>

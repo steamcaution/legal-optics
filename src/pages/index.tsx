@@ -16,9 +16,9 @@ const Main: NextPageWithLayout = () => {
             <br />
             지금 경험하세요
           </HomeMainTitle>
-          <AboutButton>
-            <Link href="/about">Go to LegalOptics &gt;</Link>
-          </AboutButton>
+          <Link href="/about">
+            <AboutButton>Go to LegalOptics &gt;</AboutButton>
+          </Link>
         </HomeMainInner>
       </HomeMainSection>
       <FooterMessage />
