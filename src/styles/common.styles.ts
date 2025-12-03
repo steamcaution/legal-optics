@@ -1,11 +1,12 @@
 import styled from '@emotion/styled';
 import { css } from '@emotion/react';
+import { getAssetPath } from '../lib/getAssertPath';
 
 export const GlobalFontStyles = css`
   @font-face {
     font-family: 'BookkMyungjo';
     font-display: fallback;
-    src: url('/fonts/BookkMyungjo_Light.woff') format('truetype');
+    src: url('${getAssetPath('/fonts/BookkMyungjo_Light.woff')}') format('truetype');
     font-style: normal;
   }
 `;

@@ -1,4 +1,5 @@
 import styled from '@emotion/styled';
+import { getAssetPath } from '../lib/getAssertPath';
 
 export const FooterWrap = styled.footer`
   margin-top: auto;
@@ -18,7 +19,7 @@ export const FooterMsgWrap = styled.div`
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('/img/background_logo.png');
+    background-image: url('${getAssetPath('/img/background_logo.png')}');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 300px;
