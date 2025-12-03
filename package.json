@@ -30,7 +30,6 @@
     "build": "next build && next export",
     "start": "next start"
   },
-  "homepage": "https://steamcaution.github.io/legal-optics",
   "browserslist": {
     "production": [
       ">0.2%",
