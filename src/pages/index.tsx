@@ -2,6 +2,8 @@ import React, { ReactElement } from 'react';
 import { NextPageWithLayout } from './_app';
 import { AppPageLayoutProps } from '../layout/wrapper.types';
 import Wrapper from '../layout/wrapper';
+import { AboutButton, HomeMainInner, HomeMainSection, HomeMainTitle } from '../styles/main.styles';
+import { FooterMessage } from '../components/footer/footer_msg';
 import { AboutButton, HomeMainSection, HomeMainInner, HomeMainTitle } from '../styles/main.styles';
 import { Problem } from '../components/main/problem';
 import { Solutions } from '../components/main/solutions';
@@ -16,11 +18,12 @@ const Main: NextPageWithLayout = () => {
             <br />
             지금 경험하세요
           </HomeMainTitle>
-          <AboutButton href="/about">Go to LegalOptics &gt;</AboutButton>
+          <AboutButton href="/legal-optics/about">Go to LegalOptics &gt;</AboutButton>
         </HomeMainInner>
       </HomeMainSection>
       <Problem />
       <Solutions />
+      <FooterMessage />
     </>
   );
 };

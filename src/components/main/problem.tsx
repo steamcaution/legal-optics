@@ -15,7 +15,9 @@ export const Problem = () => {
       <SectionTitle>이런 고민 있으신가요?</SectionTitle>
       <ProblemGrid>
         <ProblemCard>
-          <ProblemIcon>📄</ProblemIcon>
+          <ProblemIcon>
+            <img src="/legal-optics/img/icons/inefficient.png" alt="비효율적 문서 처리" />
+          </ProblemIcon>
           <ProblemCardTitle>비효율적 문서 처리</ProblemCardTitle>
           <ProblemList>
             <li>반복적인 문서 처리 업무</li>
@@ -25,7 +27,9 @@ export const Problem = () => {
           </ProblemList>
         </ProblemCard>
         <ProblemCard>
-          <ProblemIcon>⏰</ProblemIcon>
+          <ProblemIcon>
+            <img src="/legal-optics/img/icons/workforce_time_consuming.png" alt="인력과 시간 소요" />
+          </ProblemIcon>
           <ProblemCardTitle>인력과 시간 소요</ProblemCardTitle>
           <ProblemList>
             <li>고급 법률 인력이 단순 문서 작업에 투입</li>
@@ -35,7 +39,9 @@ export const Problem = () => {
           </ProblemList>
         </ProblemCard>
         <ProblemCard>
-          <ProblemIcon>💡</ProblemIcon>
+          <ProblemIcon>
+            <img src="/legal-optics/img/icons/lack_of_efficiency_solutions.png" alt="효율화 솔루션 부족" />
+          </ProblemIcon>
           <ProblemCardTitle>효율화 솔루션 부족</ProblemCardTitle>
           <ProblemList>
             <li>기존 솔루션은 고비용 구조</li>

@@ -13,14 +13,6 @@ export const SectionTitle = styled.h2`
   margin: 0 0 16px 0;
   text-align: center;
   letter-spacing: -0.01em;
-
-  @media (max-width: 768px) {
-    font-size: 28px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 24px;
-  }
 `;
 
 export const SectionLead = styled.p`
@@ -29,16 +21,6 @@ export const SectionLead = styled.p`
   text-align: center;
   margin: 0 0 60px 0;
   line-height: 1.5;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-    margin: 0 0 40px 0;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 14px;
-    margin: 0 0 30px 0;
-  }
 `;
 
 export const ProblemGrid = styled.div`
@@ -46,14 +28,7 @@ export const ProblemGrid = styled.div`
   grid-template-columns: repeat(3, 1fr);
   gap: 65px;
   margin-top: 60px;
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 520px) {
-    grid-template-columns: 1fr;
-  }
+  padding: 0 30px;
 `;
 
 export const ProblemCard = styled.div`
@@ -70,16 +45,17 @@ export const ProblemCard = styled.div`
     transform: translateY(-8px);
     box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
   }
-
-  @media (max-width: 768px) {
-    padding: 30px 20px;
-  }
 `;
 
 export const ProblemIcon = styled.div`
-  font-size: 56px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
   text-align: center;
+
+  img {
+    width: 130px;
+    filter: drop-shadow(0 0 10px rgba(0, 128, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 128, 255, 0.6));
+    transition: all 0.3s ease;
+  }
 `;
 
 export const ProblemCardTitle = styled.h3`
@@ -89,10 +65,6 @@ export const ProblemCardTitle = styled.h3`
   margin-top: 20px;
   margin-bottom: 25px;
   text-align: center;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
 `;
 
 export const ProblemList = styled.ul`
@@ -112,6 +84,83 @@ export const ProblemList = styled.ul`
       content: '•';
       position: absolute;
       left: 0;
+      color: #32b8c6;
+      font-weight: bold;
+    }
+  }
+`;
+
+// Solutions Section
+export const SolutionsSection = styled.section`
+  padding: 100px 0;
+  background: #0b161e;
+`;
+
+export const SolutionsGrid = styled.div`
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+  margin-top: 60px;
+`;
+
+export const SolutionCard = styled.div`
+  background: #162c3f;
+  padding: 40px 32px;
+  border-radius: 12px;
+  border: 1px solid rgba(94, 82, 64, 0.2);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+
+  &:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  }
+
+  h3 {
+    font-size: 18px;
+    color: #ffffff;
+    font-weight: 700;
+    margin: 16px 0;
+  }
+
+  p {
+    font-size: 14px;
+    color: #a8c5cc;
+    line-height: 1.6;
+    margin: 12px 0;
+    word-break: keep-all;
+  }
+`;
+
+export const SolutionBadge = styled.div`
+  display: inline-block;
+  background: #32b8c6;
+  color: #0b161e;
+  padding: 6px 16px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: bold;
+  margin-bottom: 16px;
+`;
+
+export const FeatureList = styled.ul`
+  list-style: none;
+  padding: 0;
+  margin: 16px 0;
+
+  li {
+    font-size: 14px;
+    color: #a8c5cc;
+    line-height: 1.8;
+    padding: 8px 0;
+    padding-left: 24px;
+    position: relative;
+
+    &::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: #32b8c6;
       color: #ffffff;
       font-weight: bold;
     }
@@ -133,22 +182,22 @@ export const SimpleProcessFlow = styled.div`
   max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
-
-  @media (max-width: 900px) {
-    grid-template-columns: 1fr;
-    gap: 12px;
-  }
 `;
 
 export const SimpleProcessStep = styled.div`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   text-align: center;
-  padding: 40px 32px;
+  padding: 60px 32px 40px;
   background: #162c3f;
   border-radius: 12px;
   border: 1px solid rgba(94, 82, 64, 0.2);
   position: relative;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  width: 215px;
+  height: 180px;
 
   &:hover {
     transform: translateY(-8px);
@@ -158,23 +207,14 @@ export const SimpleProcessStep = styled.div`
   h4 {
     font-size: 18px;
     color: #ffffff;
-    margin: 12px 0;
     font-weight: bold;
-
-    @media (max-width: 768px) {
-      font-size: 16px;
-    }
   }
 
   p {
     font-size: 14px;
     color: #a8c5cc;
     line-height: 1.6;
-    margin: 0;
-  }
-
-  @media (max-width: 900px) {
-    padding: 30px 20px;
+    word-break: keep-all;
   }
 `;
 
@@ -197,8 +237,13 @@ export const SimpleStepNumber = styled.div`
 `;
 
 export const SimpleStepIcon = styled.div`
-  font-size: 56px;
-  margin: 20px 0;
+  height: 75px;
+
+  img {
+    height: 75px;
+    filter: drop-shadow(0 0 10px rgba(0, 128, 255, 0.8)) drop-shadow(0 0 20px rgba(0, 128, 255, 0.6));
+    transition: all 0.3s ease;
+  }
 `;
 
 export const SimpleProcessArrow = styled.div`
@@ -206,16 +251,11 @@ export const SimpleProcessArrow = styled.div`
   color: #32b8c6;
   font-weight: bold;
   text-align: center;
-
-  @media (max-width: 900px) {
-    transform: rotate(90deg);
-    margin: 10px 0;
-  }
 `;
 
 // Technology Section
 export const TechnologySection = styled.section`
-  padding: 100px 0;
+  padding: 100px 30px;
   background: #0b161e;
 `;
 
@@ -228,10 +268,6 @@ export const TechProblemSolution = styled.div`
   grid-template-columns: 1fr 1fr;
   gap: 32px;
   margin-bottom: 60px;
-
-  @media (max-width: 768px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const TechBox = styled.div`
@@ -268,10 +304,6 @@ export const TechBox = styled.div`
       }
     }
   }
-
-  @media (max-width: 768px) {
-    padding: 30px 20px;
-  }
 `;
 
 export const ProblemBox = styled(TechBox)`
@@ -288,18 +320,6 @@ export const CompetitiveGrid = styled.div`
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 24px;
-
-  @media (max-width: 1280px) {
-    grid-template-columns: repeat(3, 1fr);
-  }
-
-  @media (max-width: 768px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 520px) {
-    grid-template-columns: 1fr;
-  }
 `;
 
 export const CompetitiveCard = styled.div`
@@ -310,6 +330,7 @@ export const CompetitiveCard = styled.div`
   text-align: center;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
   transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  word-break: keep-all;
 
   &:hover {
     transform: translateY(-8px);
@@ -329,244 +350,15 @@ export const CompetitiveCard = styled.div`
     line-height: 1.6;
     margin: 0;
   }
-
-  @media (max-width: 768px) {
-    padding: 24px 16px;
-  }
 `;
 
 export const CompIcon = styled.div`
-  font-size: 40px;
-  margin-bottom: 12px;
-`;
+  font-size: 70px;
+  margin-bottom: 30px;
 
-// Stats Section
-export const StatsSection = styled.section`
-  padding: 100px 0;
-  background: rgba(94, 82, 64, 0.12);
-`;
-
-export const StatsGrid = styled.div`
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 32px;
-  margin-top: 60px;
-
-  @media (max-width: 900px) {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  @media (max-width: 520px) {
-    grid-template-columns: 1fr;
-  }
-`;
-
-export const StatCard = styled.div`
-  background: #162c3f;
-  padding: 40px 32px;
-  border-radius: 12px;
-  border: 1px solid rgba(94, 82, 64, 0.2);
-  text-align: center;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.04);
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  border-top: 4px solid #32b8c6;
-
-  &:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
-  }
-
-  @media (max-width: 768px) {
-    padding: 30px 20px;
-  }
-`;
-
-export const StatNumber = styled.div`
-  font-size: 52px;
-  font-weight: bold;
-  color: #32b8c6;
-  margin: 0 0 12px 0;
-  line-height: 1.2;
-
-  @media (max-width: 768px) {
-    font-size: 40px;
-  }
-`;
-
-export const StatLabel = styled.div`
-  font-size: 18px;
-  color: #ffffff;
-  font-weight: 600;
-  margin: 0 0 8px 0;
-
-  @media (max-width: 768px) {
-    font-size: 16px;
-  }
-`;
-
-export const StatDesc = styled.p`
-  font-size: 14px;
-  color: #a8c5cc;
-  margin: 0;
-`;
-
-// CTA Section
-export const CTASection = styled.section`
-  padding: 100px 0;
-  background: linear-gradient(135deg, #0b161e 0%, #162c3f 100%);
-`;
-
-export const CTAWrap = styled.div`
-  padding-bottom: 50px;
-  text-align: center;
-  color: #f8f8f8;
-
-  h2 {
-    font-size: 42px;
-    margin: 0 0 20px 0;
-    font-weight: bold;
-    color: #f8f8f8;
-    letter-spacing: -0.01em;
-
-    @media (max-width: 768px) {
-      font-size: 32px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 24px;
-    }
-  }
-
-  > p {
-    font-size: 18px;
-    margin: 0 0 50px 0;
-    color: #b0d4dc;
-    line-height: 1.6;
-
-    @media (max-width: 768px) {
-      font-size: 16px;
-      margin: 0 0 30px 0;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 14px;
-      margin: 0 0 20px 0;
-    }
-  }
-`;
-
-export const CTAButtons = styled.div`
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 32px;
-  flex-wrap: wrap;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-  }
-`;
-
-export const BtnLarge = styled.a`
-  padding: 20px 45px;
-  font-size: 16px;
-  border-radius: 8px;
-  text-decoration: none;
-  font-weight: 600;
-  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-  display: inline-block;
-
-  @media (max-width: 768px) {
-    width: 100%;
-    padding: 16px 32px;
-  }
-
-  @media (max-width: 480px) {
-    font-size: 14px;
-    padding: 12px 24px;
-  }
-`;
-
-export const BtnPhone = styled(BtnLarge)`
-  background: #ffffff;
-  color: #0b161e;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  &:hover {
-    background: #f0f0f0;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-`;
-
-export const BtnKakao = styled(BtnLarge)`
-  background: #fee500;
-  color: #000000;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-
-  &:hover {
-    background: #fddc3f;
-    transform: translateY(-2px);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
-  }
-`;
-
-export const CTAEmail = styled.div`
-  margin-top: 32px;
-
-  a {
-    color: #b0d4dc;
-    text-decoration: none;
-    font-size: 14px;
-    transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
-    border-bottom: 1px solid #b0d4dc;
-    padding-bottom: 4px;
-
-    &:hover {
-      color: #ffffff;
-      border-bottom-color: #ffffff;
-    }
-  }
-`;
-
-// Final Message Section
-export const FinalMessageSection = styled.section`
-  padding: 80px 0;
-  background: #0b161e;
-`;
-
-export const FinalMessage = styled.div`
-  text-align: center;
-
-  h2 {
-    font-size: 42px;
-    line-height: 1.5;
-    margin: 0 0 20px 0;
-    font-weight: bold;
-    color: #f8f8f8;
-    letter-spacing: -0.01em;
-
-    @media (max-width: 768px) {
-      font-size: 32px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 24px;
-    }
-  }
-
-  .highlight {
-    font-size: 20px;
-    color: #32b8c6;
-    font-weight: 600;
-    margin: 0;
-
-    @media (max-width: 768px) {
-      font-size: 18px;
-    }
-
-    @media (max-width: 480px) {
-      font-size: 16px;
-    }
+  img {
+    width: 70px;
+    filter: drop-shadow(0 0 10px rgba(0, 128, 255, 0.7)) drop-shadow(0 0 20px rgba(0, 128, 255, 0.5));
+    transition: all 0.3s ease;
   }
 `;

@@ -4,11 +4,11 @@ const nextConfig = {
   assetPrefix: '/legal-optics',
   output: 'export',
   env: {
-    NEXT_PUBLIC_BASE_PATH: '/legal-optics',
+    NEXT_PUBLIC_BASE_PATH: '/legal-optics'
   },
   compiler: {
-    emotion: true,
-  },
-}
+    emotion: true
+  }
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
