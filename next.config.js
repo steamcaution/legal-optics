@@ -1,13 +1,14 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/legal-optics',
-  assetPrefix: '/legal-optics',
+  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  trailingSlash: true,
   output: 'export',
-  env: {
-    NEXT_PUBLIC_BASE_PATH: '/legal-optics'
-  },
   compiler: {
     emotion: true
+  },
+  images: {
+    unoptimized: true
   }
 };
 

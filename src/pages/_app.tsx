@@ -31,13 +31,7 @@ export default function MyApp({ Component, pageProps, emotionCache = clientSideE
   return (
     <CacheProvider value={emotionCache}>
       <Head>
-        <link
-          rel="preload"
-          href="/legal-optics/fonts/BookkMyungjo_Light.woff"
-          as="font"
-          type="font/woff"
-          crossOrigin="anonymous"
-        />
+        <link rel="preload" href="/fonts/BookkMyungjo_Light.woff" as="font" type="font/woff" crossOrigin="anonymous" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta charSet="UTF-8" />
         <title>Legal Optics</title>

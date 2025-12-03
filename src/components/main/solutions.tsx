@@ -60,19 +60,19 @@ export const Solutions = () => {
     {
       label: 'LxLens',
       title: '거래 내역 도표화',
-      image: '/legal-optics/img/lx_lens.png',
+      image: '/img/lx_lens.png',
       alt: 'LxLens'
     },
     {
       label: 'DebtLens',
       title: '부채 증명서 자동 입력',
-      image: '/legal-optics/img/debt_lens.png',
+      image: '/img/debt_lens.png',
       alt: 'DebtLens'
     },
     {
       label: 'ProofLens',
       title: '소명자료 초안 작성',
-      image: '/legal-optics/img/proof_lens.png',
+      image: '/img/proof_lens.png',
       alt: 'ProofLens'
     }
   ];

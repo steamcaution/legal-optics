@@ -18,7 +18,7 @@ export const FooterMsgWrap = styled.div`
     content: '';
     position: absolute;
     inset: 0;
-    background-image: url('/legal-optics/img/background_logo.png');
+    background-image: url('/img/background_logo.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: 300px;

@@ -6,8 +6,7 @@ export const HomeMainSection = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: flex-start;
-  background:
-    linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/legal-optics/img/background/image1.png');
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url('/img/background/image1.png');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

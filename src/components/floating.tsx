@@ -42,7 +42,7 @@ export const FloatingButton = () => {
 
       {isKakaoVisible && (
         <FloatingIcon onClick={openKakao} title="카카오톡 문의">
-          <img src="/legal-optics/img/icon/kakao.png" alt="kakao" />
+          <img src="/img/icon/kakao.png" alt="kakao" />
         </FloatingIcon>
       )}
 

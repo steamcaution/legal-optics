@@ -20,14 +20,14 @@ export default function Footer() {
     <FooterWrap>
       <InfoWrap>
         <InfoTop>
-          <img className="footerLogo" src="/legal-optics/img/title_logo.png" alt="Legal Optics" />
+          <img className="footerLogo" src="/img/title_logo.png" alt="Legal Optics" />
 
           <SocialLinks>
             <a href="http://pf.kakao.com/_DJxgkn" title="KakaoTalk" target="_blank" rel="noopener noreferrer">
-              <img src="/legal-optics/img/icon/kakao.png" alt="KakaoTalk" />
+              <img src="/img/icon/kakao.png" alt="KakaoTalk" />
             </a>
             <a href="https://blog.naver.com/legalpapers" title="Blog" target="_blank" rel="noopener noreferrer">
-              <img src="/legal-optics/img/icon/naver_blog.png" alt="NaverBlog" />
+              <img src="/img/icon/naver_blog.png" alt="NaverBlog" />
             </a>
             <a
               href="https://www.instagram.com/legaloptics/"
@@ -35,7 +35,7 @@ export default function Footer() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <img src="/legal-optics/img/icon/instagram.png" alt="Instagram" />
+              <img src="/img/icon/instagram.png" alt="Instagram" />
             </a>
           </SocialLinks>
         </InfoTop>

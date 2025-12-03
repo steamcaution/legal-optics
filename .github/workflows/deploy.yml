@@ -26,6 +26,8 @@ jobs:
         run: npm ci
 
       - name: Build
+        env:
+          NEXT_PUBLIC_BASE_PATH: '''
         run: |
           npm run build
           touch out/.nojekyll
