@@ -26,11 +26,9 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "next start",
     "dev": "next dev",
-    "build": "next build && touch out/.nojekyll",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d out"
+    "build": "next build && next export",
+    "start": "next start"
   },
   "homepage": "https://steamcaution.github.io/legal-optics",
   "browserslist": {
