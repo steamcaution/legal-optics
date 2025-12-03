@@ -29,6 +29,7 @@ import {
 import { FooterMessage } from '../../components/footer/footer_msg';
 import { Organization } from '../../components/about/organization';
 import { Price } from '../../components/about/price';
+import { getAssetPath } from '../../lib/getAssertPath';
 
 const AboutUs: NextPageWithLayout = () => {
   return (
@@ -85,7 +86,11 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessStep>
               <SimpleStepNumber>1</SimpleStepNumber>
               <SimpleStepIcon>
-                <img src="/img/icons/upload_document.png" alt="문서 업로드" style={{ height: '65px' }} />
+                <img
+                  src={getAssetPath('/img/icons/upload_document.png')}
+                  alt="문서 업로드"
+                  style={{ height: '65px' }}
+                />
               </SimpleStepIcon>
               <h4>문서 업로드</h4>
               <p>
@@ -98,7 +103,11 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessStep>
               <SimpleStepNumber>2</SimpleStepNumber>
               <SimpleStepIcon>
-                <img src="/img/icons/automatic_analysis.png" alt="AI 자동 분석" style={{ height: '80px' }} />
+                <img
+                  src={getAssetPath('/img/icons/automatic_analysis.png')}
+                  alt="AI 자동 분석"
+                  style={{ height: '80px' }}
+                />
               </SimpleStepIcon>
               <h4>AI 자동 분석</h4>
               <p>
@@ -111,7 +120,7 @@ const AboutUs: NextPageWithLayout = () => {
             <SimpleProcessStep>
               <SimpleStepNumber>3</SimpleStepNumber>
               <SimpleStepIcon>
-                <img src="/img/icons/results.png" alt="결과 확인 및 다운로드" />
+                <img src={getAssetPath('/img/icons/results.png')} alt="결과 확인 및 다운로드" />
               </SimpleStepIcon>
               <h4>결과 확인 및 다운로드</h4>
               <p>
@@ -154,7 +163,7 @@ const AboutUs: NextPageWithLayout = () => {
             <CompetitiveGrid>
               <CompetitiveCard>
                 <CompIcon>
-                  <img src="/img/icons/ai_ocr_tech.png" alt="AI+OCR 기술" />
+                  <img src={getAssetPath('/img/icons/ai_ocr_tech.png')} alt="AI+OCR 기술" />
                 </CompIcon>
                 <h4>AI + OCR 기술</h4>
                 <p>법률 문서 자동 인식 및 텍스트 추출,</p>
@@ -162,7 +171,7 @@ const AboutUs: NextPageWithLayout = () => {
               </CompetitiveCard>
               <CompetitiveCard>
                 <CompIcon>
-                  <img src="/img/icons/customized_processing.png" alt="맞춤형 처리" />
+                  <img src={getAssetPath('/img/icons/customized_processing.png')} alt="맞춤형 처리" />
                 </CompIcon>
                 <h4>맞춤형 처리</h4>
                 <p>금융사별 거래내역서 맞춤형 처리,</p>
@@ -170,7 +179,7 @@ const AboutUs: NextPageWithLayout = () => {
               </CompetitiveCard>
               <CompetitiveCard>
                 <CompIcon>
-                  <img src="/img/icons/modular_structure.png" alt="모듈화 구조" />
+                  <img src={getAssetPath('/img/icons/modular_structure.png')} alt="모듈화 구조" />
                 </CompIcon>
                 <h4>모듈화 구조</h4>
                 <p>다양한 문서/금융 데이터 확장성 확보,</p>
@@ -178,7 +187,7 @@ const AboutUs: NextPageWithLayout = () => {
               </CompetitiveCard>
               <CompetitiveCard>
                 <CompIcon>
-                  <img src="/img/icons/intuitive_ui_ux.png" alt="직관적 UI/UX" />
+                  <img src={getAssetPath('/img/icons/intuitive_ui_ux.png')} alt="직관적 UI/UX" />
                 </CompIcon>
                 <h4>직관적 UI/UX</h4>
                 <p>실무자가 쉽게 문서 업로드 및 검토,</p>
@@ -186,7 +195,7 @@ const AboutUs: NextPageWithLayout = () => {
               </CompetitiveCard>
               <CompetitiveCard>
                 <CompIcon>
-                  <img src="/img/icons/reasonable_price.png" alt="합리적 가격" />
+                  <img src={getAssetPath('/img/icons/reasonable_price.png')} alt="합리적 가격" />
                 </CompIcon>
                 <h4>합리적 가격</h4>
                 <p>경쟁사 대비 투명하고 합리적한 가격,</p>

@@ -1,14 +1,17 @@
 import React from 'react';
 import { HeaderInnerItem, HeaderTop, HeaderWrap, Nav, TitleLogo } from '../styles/common.styles';
 import Link from 'next/link';
+import { getAssetPath } from '../lib/getAssertPath';
 
 export default function Header() {
   return (
     <HeaderWrap>
       <HeaderTop />
       <HeaderInnerItem>
-        <TitleLogo href="/">
-          <img src="/img/title_logo.png" alt="Legal Optics" />
+        <TitleLogo>
+          <Link href={getAssetPath('/')}>
+            <img src={getAssetPath('/img/title_logo.png')} alt="Legal Optics" />
+          </Link>
         </TitleLogo>
 
         <Nav>

@@ -9,6 +9,7 @@ import {
   SectionLead,
   SectionTitle
 } from '../../styles/about.styles';
+import { getAssetPath } from '../../lib/getAssertPath';
 
 export const Problem = () => {
   return (
@@ -18,7 +19,7 @@ export const Problem = () => {
       <ProblemGrid>
         <ProblemCard>
           <ProblemIcon>
-            <img src="/img/icons/inefficient.png" alt="비효율적 문서 처리" />
+            <img src={getAssetPath('/img/icons/inefficient.png')} alt="비효율적 문서 처리" />
           </ProblemIcon>
           <ProblemCardTitle>비효율적 문서 처리</ProblemCardTitle>
           <ProblemList>
@@ -30,7 +31,7 @@ export const Problem = () => {
         </ProblemCard>
         <ProblemCard>
           <ProblemIcon>
-            <img src="/img/icons/workforce_time_consuming.png" alt="인력과 시간 소요" />
+            <img src={getAssetPath('/img/icons/workforce_time_consuming.png')} alt="인력과 시간 소요" />
           </ProblemIcon>
           <ProblemCardTitle>인력과 시간 소요</ProblemCardTitle>
           <ProblemList>
@@ -42,7 +43,7 @@ export const Problem = () => {
         </ProblemCard>
         <ProblemCard>
           <ProblemIcon>
-            <img src="/img/icons/lack_of_efficiency_solutions.png" alt="효율화 솔루션 부족" />
+            <img src={getAssetPath('/img/icons/lack_of_efficiency_solutions.png')} alt="효율화 솔루션 부족" />
           </ProblemIcon>
           <ProblemCardTitle>효율화 솔루션 부족</ProblemCardTitle>
           <ProblemList>

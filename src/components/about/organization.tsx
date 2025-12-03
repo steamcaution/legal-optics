@@ -70,7 +70,7 @@ export const Organization = () => {
       {openPerson && personDetail[openPerson] && (
         <OrgDetailOutput>
           <DetailBox>
-            <DetailImage style={{ backgroundImage: `url('${personDetail[openPerson].image}')` }} />
+            <DetailImage />
             <DetailText>
               <h3>{personDetail[openPerson].name}</h3>
               <p>{personDetail[openPerson].description}</p>

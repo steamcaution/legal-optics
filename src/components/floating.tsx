@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FloatingContainer, FloatingIcon, ScrollTopIcon } from '../styles/floating.styles';
+import { getAssetPath } from '../lib/getAssertPath';
 
 export const FloatingButton = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -42,7 +43,7 @@ export const FloatingButton = () => {
 
       {isKakaoVisible && (
         <FloatingIcon onClick={openKakao} title="카카오톡 문의">
-          <img src="/img/icon/kakao.png" alt="kakao" />
+          <img src={getAssetPath('/img/icon/kakao.png')} alt="kakao" />
         </FloatingIcon>
       )}
 
