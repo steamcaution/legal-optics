@@ -15,7 +15,7 @@ const Main: NextPageWithLayout = () => {
             <br />
             지금 경험하세요
           </HomeMainTitle>
-          <AboutButton href="/legal-optics/about">Go to LegalOptics &gt;</AboutButton>
+          <AboutButton href="/about">Go to LegalOptics &gt;</AboutButton>
         </HomeMainInner>
       </HomeMainSection>
       <FooterMessage />
