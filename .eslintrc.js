@@ -4,7 +4,7 @@ module.exports = {
     browser: true,
     es6: true,
     node: true,
-    jest: true,
+    jest: true
   },
   root: true,
   extends: [
@@ -12,13 +12,13 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:@typescript-eslint/recommended',
     'plugin:@typescript-eslint/eslint-recommended',
-    'plugin:prettier/recommended',
+    'plugin:prettier/recommended'
   ],
   parserOptions: {
     ecmaVersion: 'latest',
     ecmaFeatures: { jsx: true },
     sourceType: 'module',
-    tsconfigRootDir: __dirname,
+    tsconfigRootDir: __dirname
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
@@ -31,6 +31,6 @@ module.exports = {
     '@typescript-eslint/explicit-function-return-type': 'off',
     '@typescript-eslint/no-explicit-any': 'off',
     '@typescript-eslint/no-var-requires': 0,
-    '@typescript-eslint/no-empty-function': 'off',
-  },
-}
+    '@typescript-eslint/no-empty-function': 'off'
+  }
+};
