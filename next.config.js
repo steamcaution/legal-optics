@@ -1,9 +1,11 @@
 /** @type {import('next').NextConfig} */
-console.log('Current APP_ENV:', process.env.NEXT_PUBLIC_APP_ENV);
+
+const isGithub = process.env.NEXT_PUBLIC_APP_ENV === 'github';
+
 const nextConfig = {
   output: 'export',
-  basePath: process.env.NEXT_PUBLIC_BASE_PATH || '',
-  assetPrefix: process.env.NEXT_PUBLIC_BASE_PATH || '',
+  basePath: isGithub ? '/legal-optics' : '',
+  assetPrefix: isGithub ? '/legal-optics' : '',
   trailingSlash: true,
   compiler: {
     emotion: true
